@@ -14,6 +14,8 @@
 }
 
 @property(nonatomic) NSInteger wordID;
+// The wordID this word with statistics refers to
+
 @property(nonatomic,retain) NSArray* reviewDates;
 @property(nonatomic) BOOL isStudied;
 

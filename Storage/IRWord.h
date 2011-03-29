@@ -24,5 +24,6 @@
 @property(nonatomic,retain) NSString* soundFileName;
 
 -(id)initWithID:(NSInteger)wordId englishWord:(NSString*)eng translated:(NSString*)trans lang:(NSString*)lang;
+// EFFECTS: create a new Word object with specified English Word, translated word, and language
 
 @end

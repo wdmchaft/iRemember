@@ -13,7 +13,7 @@ static IRAppState* currentState;
 
 @implementation IRAppState
 
-@synthesize libraries;
+@synthesize libraries, currentStudyPlan;
 
 +(id)currentState{
 	if(currentState==nil) currentState = [[IRAppState alloc] init];
@@ -21,11 +21,23 @@ static IRAppState* currentState;
 }
 
 -(void)setWordsForGameWithMode:(GameStartMode)mode{
+	switch(mode){
+		case kGameStartAll:
+			wordsForGame = [[[currentStudyPlan wordList] words] copy];
+			break;
+		case kGameStartStudied:
+			wordsForGame = [[[currentStudyPlan wordList] studied] copy];
+			break;
+	}			
 	return;
 }
 
--(IRWordList*)wordsForGame{
-	return [[[IRWordList alloc] init] autorelease];
+-(NSArray*)wordsForGame{
+	return [wordsForGame autorelease];
+}
+
+-(void)updateStatisticsWithList:(NSArray*)list inGame:(NSString *)gameName{
+	[currentStudyPlan updateStatisticsWithList:list inGame:gameName];
 }
 
 @end

@@ -16,7 +16,18 @@
 }
 
 @property(nonatomic,retain) NSString* listName;
+// The name of this word list
+
 @property(nonatomic,retain) NSMutableArray* wordsWithStatistics;
-@property(nonatomic,retain) NSMutableArray* wordsWithStatisticsInGame;
+// The list of words with the statistics
+
+@property(nonatomic,retain) NSMutableDictionary* wordsWithStatisticsInGame;
+// The collection of word lists for each game statistics
+
+-(NSArray*)studied;
+// EFFECTS: return the words which have been studied
+
+-(void)updateStatisticsWithList:(NSArray*)list inGame:(NSString *)gameName;
+// EFFECTS: updates the words with statistics in game
 
 @end

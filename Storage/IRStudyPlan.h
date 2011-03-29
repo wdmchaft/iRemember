@@ -7,19 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IRWord.h"
-#import "IRWordWithStatistics.h"
-#import "IRWordWithStatisticsInGame.h"
+#import "IRWordList.h"
 
 @interface IRStudyPlan : NSObject {
 
 }
 
 @property(nonatomic,retain) NSString* name;
-@property(nonatomic,retain) NSMutableArray* wordsWithStatistics;
+// The name of this word list
+
+@property(nonatomic,retain) IRWordList* wordList;
+// The list of words in this study plan
+
 @property(nonatomic,retain) NSMutableArray* plannedReviewDates;
 @property(nonatomic,retain) NSMutableArray* actualReviewDates;
-@property(nonatomic,retain) NSMutableArray* wordsWithStatisticsInGame; // This one seems redundant
 @property(nonatomic) NSInteger elapsedDay;
+
+-(void)updateStatisticsWithList:(NSArray*)list inGame:(NSString *)gameName;
+// EFFECTS: updates the words with statistics in game
 
 @end

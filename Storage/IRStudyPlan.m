@@ -11,13 +11,16 @@
 
 @implementation IRStudyPlan
 
-@synthesize name, wordsWithStatistics, plannedReviewDates, actualReviewDates, wordsWithStatisticsInGame, elapsedDay;
+@synthesize name, wordList, plannedReviewDates, actualReviewDates, elapsedDay;
+
+-(void)updateStatisticsWithList:(NSArray*)list inGame:(NSString *)gameName{
+	[wordList updateStatisticsWithList:list inGame:gameName];
+}
 
 -(void)dealloc{
-	[wordsWithStatistics release];
+	[wordList release];
 	[plannedReviewDates release];
 	[actualReviewDates release];
-	[wordsWithStatistics release];
 	[super dealloc];
 }
 
