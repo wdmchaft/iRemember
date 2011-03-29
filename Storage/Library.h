@@ -15,6 +15,7 @@
 
 @property(nonatomic,retain) NSMutableArray* words;
 // Array of Word
+// Sorted according to the English Word
 
 -(BOOL)checkIDConsistency;
 // EFFECTS: return YES if the wordIDs in the word list is consistent (no duplicates), NO otherwise
@@ -38,7 +39,7 @@
 
 -(int)addWords:(NSArray*)wordList;
 // MODIFIES: words in self
-// EFFECTS: add the words in the given list into this list
+// EFFECTS: add the words in the given list of Word object into current list
 //			returns the actual number of words added to the list
 
 -(BOOL)removeWordWithID:(NSInteger)wordID;
@@ -48,7 +49,7 @@
 
 -(BOOL)removeWordWithString:(NSString*)theWord;
 // MODIFIES: words in self
-// EFFECTS: remove any word that matches the specified English Word
+// EFFECTS: remove the word that matches the specified English Word
 //			returns YES if it's successfully removed
 
 @end
