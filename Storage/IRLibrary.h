@@ -17,7 +17,7 @@
 @property(nonatomic,retain) NSString* language;
 // Array of Word
 
--(id)initWithLanguage:(NSString*)lang
+-(id)initWithLanguage:(NSString*)lang;
 
 -(BOOL)checkIDConsistency;
 // EFFECTS: return YES if the wordIDs in the word list is consistent (no duplicates), NO otherwise
