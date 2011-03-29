@@ -24,6 +24,33 @@
 	return self;
 }
 
+-(void)encodeWithCoder:(NSCoder*)coder{
+	[coder encodeInteger:wordID forKey:@"wordID"];
+	[coder encodeObject:englishWord forKey:@"englishWord"];
+	[coder encodeObject:translatedWord forKey:@"translatedWord"];
+	[coder encodeObject:language forKey:@"language"];
+	[coder encodeObject:pronunciation forKey:@"pronunciation"];
+	[coder encodeInteger:difficulty forKey:@"difficulty"];
+	[coder encodeObject:example forKey:@"example"];
+	[coder encodeObject:explanation forKey:@"explanation"];
+	[coder encodeObject:soundFileName forKey:@"soundFileName"];
+}
+
+-(id)initWithCoder:(NSCoder*)decoder{
+	if([super init]!=nil){
+		[self setWordID:[decoder decodeIntegerForKey:@"wordID"]];
+		[self setEnglishWord:[decoder decodeObjectForKey:@"englishWord"]];
+		[self setTranslatedWord:[decoder decodeObjectForKey:@"translatedWord"]];
+		[self setLanguage:[decoder decodeObjectForKey:@"language"]];
+		[self setPronunciation:[decoder decodeObjectForKey:@"pronunciation"]];
+		[self setDifficulty:[decoder decodeIntegerForKey:@"difficulty"]];
+		[self setExample:[decoder decodeObjectForKey:@"example"]];
+		[self setExplanation:[decoder decodeObjectForKey:@"explanation"]];
+		[self setSoundFileName:[decoder decodeObjectForKey:@"soundFileName"]];
+	}
+	return self;
+}
+
 -(void)dealloc{
 	[super dealloc];
 }

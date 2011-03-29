@@ -20,6 +20,31 @@ static IRAppState* currentState;
 	return currentState;
 }
 
+-(void)save{
+	NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString* documentDirectory = [paths objectAtIndex:0];
+	NSString* fullPath = [NSString stringWithFormat:@"%@/%@",documentDirectory,@"library"];
+	
+	NSMutableData* data = [[NSMutableData alloc] init];
+	NSKeyedArchiver* arc = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
+	[arc encodeObject:[libraries objectAtIndex:0] forKey:@"indonesian"];
+	[arc finishEncoding];
+	BOOL success = [data writeToFile:fullPath atomically:YES];
+	[arc release];
+	[data release];
+	if(!success) NSLog(@"Unsuccessful!");
+}
+
+-(void)load{
+	NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString* documentDirectory = [paths objectAtIndex:0];
+	NSString* fullPath = [NSString stringWithFormat:@"%@/%@",documentDirectory,@"library"];
+	NSMutableData* data = [NSData dataWithContentsOfFile:fullPath];
+	NSKeyedUnarchiver* unarc = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
+	IRLibrary* library = [unarc decodeObjectForKey:@"indonesian"];
+	[unarc finishDecoding];
+}
+
 -(void)setWordsForGameWithMode:(GameStartMode)mode{
 	switch(mode){
 		case kGameStartAll:

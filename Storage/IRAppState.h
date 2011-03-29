@@ -23,6 +23,12 @@
 +(id)currentState;
 // EFFECTS: return the current state of the app
 
+-(void)save;
+// EFFECTS: save current state to file
+
+-(void)load;
+// EFFECTS: load a state from a file
+
 -(void)setWordsForGameWithMode:(GameStartMode)mode;
 // EFFECTS: set up the word list to be used by the game
 // This method is not yet finalized, the method header may change

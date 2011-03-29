@@ -165,6 +165,19 @@ CFComparisonResult compareWords(const void *val1, const void *val2, void *contex
 	return [words count];
 }
 
+-(void)encodeWithCoder:(NSCoder*)coder{
+	[coder encodeObject:words forKey:@"words"];
+	[coder encodeObject:language forKey:@"language"];
+}
+
+-(id)initWithCoder:(NSCoder*)decoder{
+	if([super init]!=nil && [self init]!=nil){
+		[self setWords:[decoder decodeObjectForKey:@"words"]];
+		[self setLanguage:[decoder decodeObjectForKey:@"language"] ];
+	}
+	return self;
+}
+
 -(void)dealloc{
 	[words release];
 	[super dealloc];
