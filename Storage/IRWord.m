@@ -6,10 +6,10 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "Word.h"
+#import "IRWord.h"
 
 
-@implementation Word
+@implementation IRWord
 
 @synthesize wordID, englishWord, translatedWord, language, pronunciation, difficulty, example, explanation, soundFileName;
 

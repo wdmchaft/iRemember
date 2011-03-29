@@ -6,17 +6,18 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "Library.h"
+#import "IRLibrary.h"
+#import "IRHeader.h"
 #import <string.h>
 
-@implementation Library
+@implementation IRLibrary
 
-@synthesize words;
+@synthesize words, language;
 
 CFComparisonResult compareWords(const void *val1, const void *val2, void *context){
 // Comparator function to compare two Word object based on the English Word
-	Word* word1 = (Word*)val1;
-	Word* word2 = (Word*)val2;
+	IRWord* word1 = (IRWord*)val1;
+	IRWord* word2 = (IRWord*)val2;
 	CFComparisonResult result = CFStringCompare((CFStringRef)[word1 englishWord],(CFStringRef)[word2 englishWord],0);
 	if(result==0){
 		if([word1 wordID]>[word2 wordID]) return 1;
@@ -29,7 +30,13 @@ CFComparisonResult compareWords(const void *val1, const void *val2, void *contex
 
 -(id)init{
 	[super init];
+	return [self initWithLanguage:DEFAULT_LANGUAGE];
+}
+
+-(id)initWithLanguage:(NSString*)lang{
+	[super init];
 	if(self!=nil){
+		[self setLanguage:lang];
 		words = [[NSMutableArray alloc] init];
 	}
 	return self;
@@ -85,17 +92,17 @@ CFComparisonResult compareWords(const void *val1, const void *val2, void *contex
 	return [result autorelease];
 }
 
--(Word*)wordWithID:(NSInteger)wordID{
+-(IRWord*)wordWithID:(NSInteger)wordID{
 	int i=0;
 	for(i=0; i<[words count]; i++){
-		Word* wordTaken = [words objectAtIndex:i];
+		IRWord* wordTaken = [words objectAtIndex:i];
 		if([wordTaken wordID]==wordID) return wordTaken;
 	}
 	return nil;
 }
 
--(Word*)wordWithString:(NSString*)theWord{
-	Word* word = [[Word alloc] initWithID:-1 englishWord:theWord translated:@"" lang:@""];
+-(IRWord*)wordWithString:(NSString*)theWord{
+	IRWord* word = [[IRWord alloc] initWithID:-1 englishWord:theWord translated:@"" lang:@""];
 	NSInteger index = (NSInteger)CFArrayBSearchValues((CFArrayRef)words,
 															CFRangeMake(0, CFArrayGetCount((CFArrayRef)words)),
 															word,
@@ -108,8 +115,8 @@ CFComparisonResult compareWords(const void *val1, const void *val2, void *contex
 	}
 }
 
--(Word*)addWord:(NSString *)eng translation:(NSString *)trans lang:(NSString *)lang{
-	Word* word = [[Word alloc] initWithID:[self availableID] englishWord:eng translated:trans lang:lang];
+-(IRWord*)addWord:(NSString *)eng translation:(NSString *)trans lang:(NSString *)lang{
+	IRWord* word = [[IRWord alloc] initWithID:[self availableID] englishWord:eng translated:trans lang:lang];
 	NSInteger insertIndex = (NSInteger)CFArrayBSearchValues((CFArrayRef)words,
                                                           CFRangeMake(0, CFArrayGetCount((CFArrayRef)words)),
                                                           word,
@@ -124,7 +131,7 @@ CFComparisonResult compareWords(const void *val1, const void *val2, void *contex
 	int result = 0;
 	//NSArray* availableIDs = [self availableIDWithCount:[wordList count]];
 	for(int i=0; i<[wordList count]; i++){
-		Word* word = [wordList objectAtIndex:i];
+		IRWord* word = [wordList objectAtIndex:i];
 		if([self wordWithID:[word wordID]]) continue;
 		NSInteger insertIndex = (NSInteger)CFArrayBSearchValues((CFArrayRef)words,
 																CFRangeMake(0, CFArrayGetCount((CFArrayRef)words)),
@@ -148,10 +155,14 @@ CFComparisonResult compareWords(const void *val1, const void *val2, void *contex
 }
 
 -(BOOL)removeWordWithString:(NSString *)theWord{
-	Word* word = [self wordWithString:theWord];
+	IRWord* word = [self wordWithString:theWord];
 	if(word==nil) return NO;
 	[words removeObject:word];
 	return YES;
+}
+
+-(NSInteger)count{
+	return [words count];
 }
 
 -(void)dealloc{

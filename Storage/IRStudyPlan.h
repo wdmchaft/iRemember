@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Word.h"
-#import "WordWithStatistics.h"
-#import "WordWithStatisticsInGame.h"
+#import "IRWord.h"
+#import "IRWordWithStatistics.h"
+#import "IRWordWithStatisticsInGame.h"
 
-@interface StudyPlan : NSObject {
+@interface IRStudyPlan : NSObject {
 
 }
 

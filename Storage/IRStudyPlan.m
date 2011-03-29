@@ -6,10 +6,10 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "StudyPlan.h"
+#import "IRStudyPlan.h"
 
 
-@implementation StudyPlan
+@implementation IRStudyPlan
 
 @synthesize name, wordsWithStatistics, plannedReviewDates, actualReviewDates, wordsWithStatisticsInGame, elapsedDay;
 

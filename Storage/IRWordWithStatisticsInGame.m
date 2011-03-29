@@ -6,10 +6,10 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "WordWithStatisticsInGame.h"
+#import "IRWordWithStatisticsInGame.h"
 
 
-@implementation WordWithStatisticsInGame
+@implementation IRWordWithStatisticsInGame
 
 @synthesize wordID, correctCount, incorrectCount, totalReactionTime;
 

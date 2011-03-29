@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Word.h"
+#import "IRWord.h"
 
-@interface WordWithStatisticsInGame : NSObject {
+@interface IRWordWithStatisticsInGame : NSObject {
 
 }
 

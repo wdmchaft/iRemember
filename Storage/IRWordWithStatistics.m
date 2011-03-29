@@ -6,10 +6,10 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "WordWithStatistics.h"
+#import "IRWordWithStatistics.h"
 
 
-@implementation WordWithStatistics
+@implementation IRWordWithStatistics
 
 @synthesize wordID, reviewDates, isStudied;
 
