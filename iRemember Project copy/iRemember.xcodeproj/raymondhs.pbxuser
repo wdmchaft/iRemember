@@ -1,0 +1,228 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* iRemember */ = {
+		activeExec = 0;
+		executables = (
+			67283C171338C53B00B66328 /* iRemember */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* iRememberViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 260}}";
+			sepNavSelRange = "{199, 0}";
+			sepNavVisRange = "{0, 326}";
+			sepNavWindowFrame = "{{15, 55}, {750, 721}}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* iRememberViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {712, 832}}";
+			sepNavSelRange = "{1054, 0}";
+			sepNavVisRange = "{642, 498}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 67283C171338C53B00B66328 /* iRemember */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* iRemember */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* iRemember */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = 67283C281338C54B00B66328 /* Code sense */;
+		executables = (
+			67283C171338C53B00B66328 /* iRemember */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 322726260;
+			PBXWorkspaceStateSaveDate = 322726260;
+		};
+		perUserProjectItems = {
+			671E28A2133C69B0000AFACC /* PBXTextBookmark */ = 671E28A2133C69B0000AFACC /* PBXTextBookmark */;
+			671E28A3133C69B0000AFACC /* PBXTextBookmark */ = 671E28A3133C69B0000AFACC /* PBXTextBookmark */;
+			671E28A4133C69B0000AFACC /* PBXTextBookmark */ = 671E28A4133C69B0000AFACC /* PBXTextBookmark */;
+			67283C571338D3E900B66328 /* PlistBookmark */ = 67283C571338D3E900B66328 /* PlistBookmark */;
+			67283C8B1338DBA600B66328 /* PBXTextBookmark */ = 67283C8B1338DBA600B66328 /* PBXTextBookmark */;
+			67283C8C1338DBA600B66328 /* PBXTextBookmark */ = 67283C8C1338DBA600B66328 /* PBXTextBookmark */;
+			67283C8D1338DBA600B66328 /* PBXTextBookmark */ = 67283C8D1338DBA600B66328 /* PBXTextBookmark */;
+			67283C8E1338DBA600B66328 /* PBXTextBookmark */ = 67283C8E1338DBA600B66328 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 67283C271338C54B00B66328 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	671E28A2133C69B0000AFACC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 67283C881338DB8300B66328 /* StudyPlanViewController.m */;
+		name = "StudyPlanViewController.m: 13";
+		rLen = 0;
+		rLoc = 218;
+		rType = 0;
+		vrLen = 224;
+		vrLoc = 0;
+	};
+	671E28A3133C69B0000AFACC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* iRememberViewController.m */;
+		name = "iRememberViewController.m: 40";
+		rLen = 0;
+		rLoc = 1054;
+		rType = 0;
+		vrLen = 504;
+		vrLoc = 730;
+	};
+	671E28A4133C69B0000AFACC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* iRememberViewController.m */;
+		name = "iRememberViewController.m: 40";
+		rLen = 0;
+		rLoc = 1054;
+		rType = 0;
+		vrLen = 498;
+		vrLoc = 642;
+	};
+	67283C171338C53B00B66328 /* iRemember */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = iRemember;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	67283C271338C54B00B66328 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	67283C281338C54B00B66328 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	67283C431338D0C300B66328 /* FlashcardViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {663, 299}}";
+			sepNavSelRange = "{608, 0}";
+			sepNavVisRange = "{36, 578}";
+		};
+	};
+	67283C441338D0C300B66328 /* FlashcardViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 245}}";
+			sepNavSelRange = "{126, 23}";
+			sepNavVisRange = "{0, 240}";
+		};
+	};
+	67283C571338D3E900B66328 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* iRemember-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/raymondhs/iRemember/iRemember-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	67283C871338DB8300B66328 /* StudyPlanViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 245}}";
+			sepNavSelRange = "{164, 0}";
+			sepNavVisRange = "{0, 232}";
+		};
+	};
+	67283C881338DB8300B66328 /* StudyPlanViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 210}}";
+			sepNavSelRange = "{218, 0}";
+			sepNavVisRange = "{0, 224}";
+		};
+	};
+	67283C8B1338DBA600B66328 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 67283C431338D0C300B66328 /* FlashcardViewController.m */;
+		name = "FlashcardViewController.m: 21";
+		rLen = 0;
+		rLoc = 608;
+		rType = 0;
+		vrLen = 578;
+		vrLoc = 36;
+	};
+	67283C8C1338DBA600B66328 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* iRememberViewController.h */;
+		name = "iRememberViewController.h: 10";
+		rLen = 0;
+		rLoc = 199;
+		rType = 0;
+		vrLen = 326;
+		vrLoc = 0;
+	};
+	67283C8D1338DBA600B66328 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 67283C441338D0C300B66328 /* FlashcardViewController.h */;
+		name = "FlashcardViewController.h: 8";
+		rLen = 23;
+		rLoc = 126;
+		rType = 0;
+		vrLen = 240;
+		vrLoc = 0;
+	};
+	67283C8E1338DBA600B66328 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 67283C871338DB8300B66328 /* StudyPlanViewController.h */;
+		name = "StudyPlanViewController.h: 10";
+		rLen = 0;
+		rLoc = 164;
+		rType = 0;
+		vrLen = 232;
+		vrLoc = 0;
+	};
+}

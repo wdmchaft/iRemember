@@ -1,0 +1,1321 @@
+TiRemember
+v7
+r0
+t323179452.730571
+cCheck dependencies
+cProcessInfoPlistFile "/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/Info.plist" iRemember-Info.plist
+cCompileXIB "/Users/zyb/iRemember/iRemember Project copy/MainWindow.xib"
+cCompileXIB "/Users/zyb/iRemember/iRemember Project copy/iRememberViewController.xib"
+cCompileXIB "/Users/zyb/iRemember/iRemember Project copy/FlashcardView.xib"
+cCompileXIB "/Users/zyb/iRemember/iRemember Project copy/StudyPlanView.xib"
+cProcessPCH /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch.gch iRemember_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/main.o "/Users/zyb/iRemember/iRemember Project copy/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberAppDelegate.o "/Users/zyb/iRemember/iRemember Project copy/Classes/iRememberAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberViewController.o "/Users/zyb/iRemember/iRemember Project copy/Classes/iRememberViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/StudyPlanViewController.o "/Users/zyb/iRemember/iRemember Project copy/Classes/StudyPlanViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/Game.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Activity/Game.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/Statistics.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Activity/Statistics.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/MainLogic.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Logic/MainLogic.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRAppState.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRAppState.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRLibrary.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRLibrary.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRStudyPlan.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRStudyPlan.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWord.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWord.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWordList.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordList.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWordWithStatistics.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordWithStatistics.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWordWithStatisticsInGame.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordWithStatisticsInGame.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o "/Users/zyb/iRemember/iRemember Project copy/Classes/FlashcardViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/untitled.o "/Users/zyb/iRemember/iRemember Project copy/Classes/untitled.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/iRemember" normal i386
+cGenerateDSYMFile "/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app.dSYM" "/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/iRemember"
+cTouch "/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app"
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/string.h
+c000000004CB3E4860000000000001731
+t1286857862
+s5937
+
+N/Users/raymondhs/iRemember Project/Classes/../FlashcardViewController.h
+c000000004D88A41500000000000000F0
+t1300800533
+s240
+i<UIKit/UIKit.h>
+
+N/Users/raymondhs/iRemember Project/Classes/../FlashcardViewController.m
+c000000004D889DB80000000000000266
+t1300798904
+s614
+i"FlashcardViewController.h"
+
+N/Users/raymondhs/iRemember Project/Classes/StudyPlanViewController.h
+c000000004D88A41F00000000000000E8
+t1300800543
+s232
+i<UIKit/UIKit.h>
+
+N/Users/raymondhs/iRemember Project/Classes/StudyPlanViewController.m
+c000000004D88A42400000000000000E0
+t1300800548
+s224
+i"StudyPlanViewController.h"
+
+N/Users/raymondhs/iRemember Project/Classes/iRememberAppDelegate.h
+c000000004D888DBB00000000000001DE
+t1300794811
+s478
+i<UIKit/UIKit.h>
+
+N/Users/raymondhs/iRemember Project/Classes/iRememberAppDelegate.m
+c000000004D888DBB00000000000007B1
+t1300794811
+s1969
+i"iRememberAppDelegate.h"
+i"iRememberViewController.h"
+
+N/Users/raymondhs/iRemember Project/Classes/iRememberViewController.h
+c000000004D889D4B0000000000000146
+t1300798795
+s326
+i<UIKit/UIKit.h>
+i"FlashcardViewController.h"
+
+N/Users/raymondhs/iRemember Project/Classes/iRememberViewController.m
+c000000004D889EBA00000000000006BA
+t1300799162
+s1722
+i"iRememberViewController.h"
+
+N/Users/raymondhs/iRemember Project/FlashcardView.xib
+c000000004D889FA30000000000005EF8
+t1300799395
+s24312
+
+N/Users/raymondhs/iRemember Project/FlashcardViewController.h
+c000000004D88A41500000000000000F0
+t1300800533
+s240
+i<UIKit/UIKit.h>
+
+N/Users/raymondhs/iRemember Project/MainWindow.xib
+c000000004D888DBB0000000000004D1D
+t1300794811
+s19741
+
+N/Users/raymondhs/iRemember Project/StudyPlanView.xib
+c000000004D88AA430000000000005F50
+t1300802115
+s24400
+
+N/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app
+t1301025434
+s306
+
+N/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app.dSYM
+t1301025434
+s102
+
+N/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app/FlashcardView.nib
+t1300866141
+s1438
+
+N/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app/Info.plist
+t1300798317
+s806
+
+N/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app/MainWindow.nib
+t1300798318
+s1127
+
+N/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app/PkgInfo
+t1300798317
+s8
+
+N/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app/StudyPlanView.nib
+t1300866141
+s1427
+
+N/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app/iRemember
+t1301025434
+s18660
+
+N/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app/iRememberViewController.nib
+t1300798318
+s2050
+
+N/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o
+t1301025433
+s37112
+
+N/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/StudyPlanViewController.o
+t1301025433
+s5212
+
+N/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRemember.LinkFileList
+c000000004D8C129700000000000002AB
+t1301025431
+s683
+
+N/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberAppDelegate.o
+t1301025433
+s50392
+
+N/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberViewController.o
+t1301025433
+s40684
+
+N/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/main.o
+t1301025433
+s6296
+
+N/Users/raymondhs/iRemember Project/iRememberViewController.xib
+c000000004D889B670000000000006657
+t1300798311
+s26199
+
+N/Users/raymondhs/iRemember Project/iRemember_Prefix.pch
+c000000004D888DBB00000000000000BB
+t1300794811
+s187
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/raymondhs/iRemember Project/main.m
+c000000004D888DBB000000000000015E
+t1300794811
+s350
+i<UIKit/UIKit.h>
+
+N/Users/raymondhs/iRemember/Classes/../FlashcardViewController.m
+c000000004D889DB80000000000000266
+t1300798904
+s614
+i"FlashcardViewController.h"
+
+N/Users/raymondhs/iRemember/Classes/StudyPlanViewController.h
+c000000004D88A41F00000000000000E8
+t1300800543
+s232
+i<UIKit/UIKit.h>
+
+N/Users/raymondhs/iRemember/Classes/StudyPlanViewController.m
+c000000004D88A42400000000000000E0
+t1300800548
+s224
+i"StudyPlanViewController.h"
+
+N/Users/raymondhs/iRemember/Classes/iRememberAppDelegate.h
+c000000004D888DBB00000000000001DE
+t1300794811
+s478
+i<UIKit/UIKit.h>
+
+N/Users/raymondhs/iRemember/Classes/iRememberAppDelegate.m
+c000000004D888DBB00000000000007B1
+t1300794811
+s1969
+i"iRememberAppDelegate.h"
+i"iRememberViewController.h"
+
+N/Users/raymondhs/iRemember/Classes/iRememberViewController.h
+c000000004D889D4B0000000000000146
+t1300798795
+s326
+i<UIKit/UIKit.h>
+i"FlashcardViewController.h"
+
+N/Users/raymondhs/iRemember/Classes/iRememberViewController.m
+c000000004D889EBA00000000000006BA
+t1300799162
+s1722
+i"iRememberViewController.h"
+
+N/Users/raymondhs/iRemember/Flashcard.xib
+c000000004D888FD10000000000001665
+t1300795345
+s5733
+
+N/Users/raymondhs/iRemember/FlashcardView.xib
+c000000004D889FA30000000000005EF8
+t1300799395
+s24312
+
+N/Users/raymondhs/iRemember/FlashcardViewController.h
+c000000004D88A41500000000000000F0
+t1300800533
+s240
+i<UIKit/UIKit.h>
+
+N/Users/raymondhs/iRemember/FlashcardViewController.m
+c000000004D88994000000000000000C0
+t1300797760
+s192
+i"FlashcardViewController.h"
+
+N/Users/raymondhs/iRemember/MainWindow.xib
+c000000004D888DBB0000000000004D1D
+t1300794811
+s19741
+
+N/Users/raymondhs/iRemember/StudyPlanView.xib
+c000000004D88AA430000000000005F50
+t1300802115
+s24400
+
+N/Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app
+t1300866143
+s306
+
+N/Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app.dSYM
+t1300866143
+s102
+
+N/Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/Flashcard.nib
+t2
+s0
+
+N/Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/FlashcardView.nib
+t1300866141
+s1438
+
+N/Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/Info.plist
+t1300798317
+s806
+
+N/Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/MainWindow.nib
+t1300798318
+s1127
+
+N/Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/PkgInfo
+t1300798317
+s8
+
+N/Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/StudyPlanView.nib
+t1300866141
+s1427
+
+N/Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/iRemember
+t1300866143
+s18580
+
+N/Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/iRememberViewController.nib
+t1300798318
+s2050
+
+N/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o
+t1300866143
+s37096
+
+N/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/StudyPlanViewController.o
+t1300866143
+s5196
+
+N/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRemember.LinkFileList
+c000000004D89A45B0000000000000283
+t1300866139
+s643
+
+N/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberAppDelegate.o
+t1300866142
+s50368
+
+N/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberViewController.o
+t1300866142
+s40660
+
+N/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/main.o
+t1300798320
+s6280
+
+N/Users/raymondhs/iRemember/iRememberViewController.xib
+c000000004D889B670000000000006657
+t1300798311
+s26199
+
+N/Users/raymondhs/iRemember/iRemember_Prefix.pch
+c000000004D888DBB00000000000000BB
+t1300794811
+s187
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/raymondhs/iRemember/main.m
+c000000004D888DBB000000000000015E
+t1300794811
+s350
+i<UIKit/UIKit.h>
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/../FlashcardViewController.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Activity/Game.m
+c000000004D91E6730000000000000000
+t1301407347
+s0
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Activity/Statistics.m
+c000000004D91E6730000000000000000
+t1301407347
+s0
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/FlashcardViewController.h
+c000000004D931BD60000000000000224
+t1301486550
+s548
+i<UIKit/UIKit.h>
+i"MainLogic.h"
+i"IRWord.h"
+i"IRWordList.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/FlashcardViewController.m
+c000000004D931C3B0000000000001325
+t1301486651
+s4901
+i"FlashcardViewController.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Logic/../../FlashcardViewController.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Logic/MainLogic.h
+c000000004D91E6730000000000000000
+t1301407347
+s0
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Logic/MainLogic.m
+c000000004D91E6730000000000000000
+t1301407347
+s0
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRAppState.h
+c000000004D91F3610000000000000502
+t1301410657
+s1282
+i<Foundation/Foundation.h>
+i"IRWordList.h"
+i"IRStudyPlan.h"
+i"IRHeader.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRAppState.m
+c000000004D91F36100000000000007E5
+t1301410657
+s2021
+i"IRAppState.h"
+i"IRHeader.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRHeader.h
+c000000004D91E6730000000000000106
+t1301407347
+s262
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRLibrary.h
+c000000004D91E6730000000000000711
+t1301407347
+s1809
+i<Foundation/Foundation.h>
+i"IRWord.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRLibrary.m
+c000000004D91F3610000000000001403
+t1301410657
+s5123
+i"IRLibrary.h"
+i"IRHeader.h"
+i<string.h>
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRStudyPlan.h
+c000000004D91F36100000000000002CC
+t1301410657
+s716
+i<Foundation/Foundation.h>
+i"IRWordList.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRStudyPlan.m
+c000000004D91F361000000000000021E
+t1301410657
+s542
+i"IRStudyPlan.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWord.h
+c000000004D91F3610000000000000360
+t1301410657
+s864
+i<Foundation/Foundation.h>
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWord.m
+c000000004D91F3610000000000000750
+t1301410657
+s1872
+i"IRWord.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordList.h
+c000000004D91F361000000000000034D
+t1301410657
+s845
+i<Foundation/Foundation.h>
+i"IRLibrary.h"
+i"IRWordWithStatistics.h"
+i"IRWordWithStatisticsInGame.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordList.m
+c000000004D91F36100000000000007A2
+t1301410657
+s1954
+i"IRWordList.h"
+i<string.h>
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordWithStatistics.h
+c000000004D91F36100000000000001B8
+t1301410657
+s440
+i<Foundation/Foundation.h>
+i"IRWord.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordWithStatistics.m
+c000000004D91E6730000000000000152
+t1301407347
+s338
+i"IRWordWithStatistics.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordWithStatisticsInGame.h
+c000000004D91E67300000000000002F5
+t1301407347
+s757
+i<Foundation/Foundation.h>
+i"IRWord.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordWithStatisticsInGame.m
+c000000004D91E6730000000000000248
+t1301407347
+s584
+i"IRWordWithStatisticsInGame.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/StudyPlanViewController.h
+c000000004D93170700000000000000E8
+t1301485319
+s232
+i<UIKit/UIKit.h>
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/StudyPlanViewController.m
+c000000004D88A42400000000000000E0
+t1300800548
+s224
+i"StudyPlanViewController.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/iRememberAppDelegate.h
+c000000004D888DBB00000000000001DE
+t1300794811
+s478
+i<UIKit/UIKit.h>
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/iRememberAppDelegate.m
+c000000004D888DBB00000000000007B1
+t1300794811
+s1969
+i"iRememberAppDelegate.h"
+i"iRememberViewController.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/iRememberViewController.h
+c000000004D889D4B0000000000000146
+t1300798795
+s326
+i<UIKit/UIKit.h>
+i"FlashcardViewController.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/iRememberViewController.m
+c000000004D889EBA00000000000006BA
+t1300799162
+s1722
+i"iRememberViewController.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/untitled.h
+c000000004D92F54D00000000000000C7
+t1301476685
+s199
+i<UIKit/UIKit.h>
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/untitled.m
+c000000004D92F54D00000000000004FC
+t1301476685
+s1276
+i"untitled.h"
+
+N/Users/zyb/iRemember/iRemember Project copy/Classes/untitled.xib
+c000000004D92F54D0000000000005095
+t1301476685
+s20629
+
+N/Users/zyb/iRemember/iRemember Project copy/FlashcardView.xib
+c000000004D93197E0000000000006B5B
+t1301485950
+s27483
+
+N/Users/zyb/iRemember/iRemember Project copy/MainWindow.xib
+c000000004D888DBB0000000000004D1D
+t1300794811
+s19741
+
+N/Users/zyb/iRemember/iRemember Project copy/StudyPlanView.xib
+c000000004D88AA430000000000005F50
+t1300802115
+s24400
+
+N/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app
+t1301486652
+s306
+
+N/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app.dSYM
+t1301486652
+s102
+
+N/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/FlashcardView.nib
+t1301486203
+s2418
+
+N/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/Info.plist
+t1300798317
+s806
+
+N/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/MainWindow.nib
+t1300798318
+s1127
+
+N/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/PkgInfo
+t1300798317
+s8
+
+N/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/StudyPlanView.nib
+t1300866141
+s1427
+
+N/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/iRemember
+t1301486652
+s64728
+
+N/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/iRememberViewController.nib
+t1300798318
+s2050
+
+N/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/untitled.nib
+t2
+s0
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController-4F41400F88EF271E.o
+t2
+s0
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController-C11F26CAB300E130.o
+t2
+s0
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o
+t1301486652
+s51752
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/Game.o
+t1301476129
+s3948
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRAppState.o
+t1301476130
+s18040
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRLibrary.o
+t1301476130
+s27140
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRStudyPlan.o
+t1301476130
+s13216
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWord.o
+t1301476130
+s20572
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWordList.o
+t1301476130
+s15184
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWordWithStatistics.o
+t1301476130
+s10120
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWordWithStatisticsInGame.o
+t1301476130
+s12904
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/MainLogic.o
+t1301476129
+s3952
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/Statistics.o
+t1301476129
+s3960
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/StudyPlanViewController.o
+t1301485325
+s5092
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRemember.LinkFileList
+c000000004D93027100000000000008C8
+t1301480049
+s2248
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberAppDelegate.o
+t1301486550
+s51256
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberViewController.o
+t1301486550
+s41548
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/main.o
+t1301476129
+s6312
+
+N/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/untitled.o
+t1301480050
+s37932
+
+N/Users/zyb/iRemember/iRemember Project copy/iRememberViewController.xib
+c000000004D889B670000000000006657
+t1300798311
+s26199
+
+N/Users/zyb/iRemember/iRemember Project copy/iRemember_Prefix.pch
+c000000004D888DBB00000000000000BB
+t1300794811
+s187
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/zyb/iRemember/iRemember Project copy/main.m
+c000000004D888DBB000000000000015E
+t1300794811
+s350
+i<UIKit/UIKit.h>
+
+N/var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch.gch
+t1301476129
+s15453392
+
+N/var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-dhnnnnyzxvobydfjttpekfquxlyg/iRemember_Prefix.pch.gch
+t1301025433
+s15453392
+
+N/var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-eywevagpgdajfqgzzbsmcmpzyzaf/iRemember_Prefix.pch.gch
+t1300798319
+s15453392
+
+NiRemember-Info.plist
+c000000004D888DBB00000000000004D6
+t1300794811
+s1238
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies323179452#323179452#0(0"0(0#1#0"8611194656#0"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController-4F41400F88EF271E.o "/Users/zyb/iRemember/iRemember Project copy/Classes/FlashcardViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController-C11F26CAB300E130.o "/Users/zyb/iRemember/iRemember Project copy/Classes/../FlashcardViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o "/Users/raymondhs/iRemember Project/Classes/../FlashcardViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s322718233.703363
+e322718233.785061
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o
+x/Users/raymondhs/iRemember Project/Classes/../FlashcardViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/raymondhs/iRemember Project/Classes/../FlashcardViewController.m322718233#322718233#0(0"0(0#0#71"/Users/raymondhs/iRemember Project/Classes/../FlashcardViewController.m8601618784#1981"    cd "/Users/raymondhs/iRemember Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator" "-I/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/include" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-dhnnnnyzxvobydfjttpekfquxlyg/iRemember_Prefix.pch -c "/Users/raymondhs/iRemember Project/Classes/../FlashcardViewController.m" -o "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o "/Users/zyb/iRemember/iRemember Project copy/Classes/../FlashcardViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323169102.169794
+e323169102.183221
+r0
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o
+x/Users/zyb/iRemember/iRemember Project copy/Classes/../FlashcardViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: /Users/zyb/iRemember/iRemember Project copy/Classes/../FlashcardViewController.m: No such file or directory
+oi686-apple-darwin10-gcc-4.2.1: warning: '-x objective-c' after last input file has no effect
+oi686-apple-darwin10-gcc-4.2.1: no input files
+lSLF07#2@88"Compile /Users/zyb/iRemember/iRemember Project copy/Classes/../FlashcardViewController.m323169102#323169102#0(382"i686-apple-darwin10-gcc-4.2.1: /Users/zyb/iRemember/iRemember Project copy/Classes/../FlashcardViewController.m: No such file or directoryi686-apple-darwin10-gcc-4.2.1: warning: '-x objective-c' after last input file has no effecti686-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@103"Command /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1323169102#18446744073709551615#0#0(1@0"0(0#0#80"/Users/zyb/iRemember/iRemember Project copy/Classes/../FlashcardViewController.m8611095840#2080"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/Classes/../FlashcardViewController.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o"1#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o "/Users/zyb/iRemember/iRemember Project copy/Classes/FlashcardViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323179452.511397
+e323179452.674393
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o
+x/Users/zyb/iRemember/iRemember Project copy/Classes/FlashcardViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@85"Compile /Users/zyb/iRemember/iRemember Project copy/Classes/FlashcardViewController.m323179452#323179452#0(0"0(0#0#77"/Users/zyb/iRemember/iRemember Project copy/Classes/FlashcardViewController.m8618301088#2077"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/Classes/FlashcardViewController.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Logic/../../FlashcardViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o /Users/raymondhs/iRemember/Classes/../FlashcardViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s322558942.997921
+e322558943.099109
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o
+x/Users/raymondhs/iRemember/Classes/../FlashcardViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/raymondhs/iRemember/Classes/../FlashcardViewController.m322558942#322558943#0(0"0(0#0#63"/Users/raymondhs/iRemember/Classes/../FlashcardViewController.m8613596960#1871"    cd /Users/raymondhs/iRemember    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap -iquote /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap -F/Users/raymondhs/iRemember/build/Debug-iphonesimulator -I/Users/raymondhs/iRemember/build/Debug-iphonesimulator/include -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386 -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources -include /var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-eywevagpgdajfqgzzbsmcmpzyzaf/iRemember_Prefix.pch -c /Users/raymondhs/iRemember/Classes/../FlashcardViewController.m -o /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/FlashcardViewController.o /Users/raymondhs/iRemember/FlashcardViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/Game.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Activity/Game.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323168929.840785
+e323168929.891255
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/Game.o
+x/Users/zyb/iRemember/iRemember Project copy/Classes/Activity/Game.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/zyb/iRemember/iRemember Project copy/Classes/Activity/Game.m323168929#323168929#0(0"0(0#0#67"/Users/zyb/iRemember/iRemember Project copy/Classes/Activity/Game.m8619454656#2048"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/Classes/Activity/Game.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/Game.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRAppState.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRAppState.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323168929.953501
+e323168930.040639
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRAppState.o
+x/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRAppState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRAppState.m: In function '-[IRAppState load]':
+o/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRAppState.m:44: warning: unused variable 'library'
+lSLF07#2@80"Compile /Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRAppState.m323168929#323168930#0(220"/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRAppState.m: In function '-[IRAppState load]':/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRAppState.m:44: warning: unused variable 'library'1(22@25"Unused variable 'library'323168929#108#112#0(6@72"/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRAppState.m323103457#44#0#44#0#19"unused variable '*'0(0#0#72"/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRAppState.m8621017952#2059"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRAppState.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRAppState.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRLibrary.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRLibrary.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323168930.000486
+e323168930.136157
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRLibrary.o
+x/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRLibrary.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRLibrary.m323168930#323168930#0(0"0(0#0#71"/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRLibrary.m8620811680#2057"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRLibrary.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRLibrary.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRStudyPlan.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRStudyPlan.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323168930.040746
+e323168930.120896
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRStudyPlan.o
+x/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRStudyPlan.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRStudyPlan.m323168930#323168930#0(0"0(0#0#73"/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRStudyPlan.m8604894688#2061"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRStudyPlan.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRStudyPlan.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWord.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWord.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323168930.120999
+e323168930.250909
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWord.o
+x/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWord.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWord.m323168930#323168930#0(0"0(0#0#68"/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWord.m8614842560#2051"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWord.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWord.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWordList.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordList.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323168930.136255
+e323168930.235032
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWordList.o
+x/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordList.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordList.m323168930#323168930#0(0"0(0#0#72"/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordList.m8621218752#2059"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordList.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWordList.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWordWithStatistics.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordWithStatistics.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323168930.235134
+e323168930.299371
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWordWithStatistics.o
+x/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordWithStatistics.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordWithStatistics.m323168930#323168930#0(0"0(0#0#82"/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordWithStatistics.m8614790336#2079"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordWithStatistics.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWordWithStatistics.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWordWithStatisticsInGame.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordWithStatisticsInGame.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323168930.251015
+e323168930.320467
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWordWithStatisticsInGame.o
+x/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordWithStatisticsInGame.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@96"Compile /Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordWithStatisticsInGame.m323168930#323168930#0(0"0(0#0#88"/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordWithStatisticsInGame.m8616780704#2091"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/Classes/Storage/IRWordWithStatisticsInGame.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/IRWordWithStatisticsInGame.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/MainLogic.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Logic/MainLogic.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323168929.914189
+e323168930.000374
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/MainLogic.o
+x/Users/zyb/iRemember/iRemember Project copy/Classes/Logic/MainLogic.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/zyb/iRemember/iRemember Project copy/Classes/Logic/MainLogic.m323168929#323168930#0(0"0(0#0#69"/Users/zyb/iRemember/iRemember Project copy/Classes/Logic/MainLogic.m8614552064#2055"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/Classes/Logic/MainLogic.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/MainLogic.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/Statistics.o "/Users/zyb/iRemember/iRemember Project copy/Classes/Activity/Statistics.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323168929.891349
+e323168929.953397
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/Statistics.o
+x/Users/zyb/iRemember/iRemember Project copy/Classes/Activity/Statistics.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/zyb/iRemember/iRemember Project copy/Classes/Activity/Statistics.m323168929#323168930#0(0"0(0#0#73"/Users/zyb/iRemember/iRemember Project copy/Classes/Activity/Statistics.m8615950176#2060"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/Classes/Activity/Statistics.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/Statistics.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/StudyPlanViewController.o "/Users/raymondhs/iRemember Project/Classes/StudyPlanViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s322718233.765650
+e322718233.831550
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/StudyPlanViewController.o
+x/Users/raymondhs/iRemember Project/Classes/StudyPlanViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/raymondhs/iRemember Project/Classes/StudyPlanViewController.m322718233#322718233#0(0"0(0#0#68"/Users/raymondhs/iRemember Project/Classes/StudyPlanViewController.m8603206848#1978"    cd "/Users/raymondhs/iRemember Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator" "-I/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/include" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-dhnnnnyzxvobydfjttpekfquxlyg/iRemember_Prefix.pch -c "/Users/raymondhs/iRemember Project/Classes/StudyPlanViewController.m" -o "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/StudyPlanViewController.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/StudyPlanViewController.o "/Users/zyb/iRemember/iRemember Project copy/Classes/StudyPlanViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323178125.473440
+e323178125.541629
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/StudyPlanViewController.o
+x/Users/zyb/iRemember/iRemember Project copy/Classes/StudyPlanViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/zyb/iRemember/iRemember Project copy/Classes/StudyPlanViewController.m:14: warning: cannot find interface declaration for 'StudyPlanViewController'
+lSLF07#2@85"Compile /Users/zyb/iRemember/iRemember Project copy/Classes/StudyPlanViewController.m323178125#323178125#0(155"/Users/zyb/iRemember/iRemember Project copy/Classes/StudyPlanViewController.m:14: warning: cannot find interface declaration for 'StudyPlanViewController'1(22@63"Cannot find interface declaration for 'StudyPlanViewController'323178125#0#155#0(6@77"/Users/zyb/iRemember/iRemember Project copy/Classes/StudyPlanViewController.m322493348#14#0#14#0#0"0(0#0#77"/Users/zyb/iRemember/iRemember Project copy/Classes/StudyPlanViewController.m8620747552#2077"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/Classes/StudyPlanViewController.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/StudyPlanViewController.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/StudyPlanViewController.o /Users/raymondhs/iRemember/Classes/StudyPlanViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s322558943.000551
+e322558943.063182
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/StudyPlanViewController.o
+x/Users/raymondhs/iRemember/Classes/StudyPlanViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/raymondhs/iRemember/Classes/StudyPlanViewController.m322558943#322558943#0(0"0(0#0#60"/Users/raymondhs/iRemember/Classes/StudyPlanViewController.m8599550688#1868"    cd /Users/raymondhs/iRemember    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap -iquote /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap -F/Users/raymondhs/iRemember/build/Debug-iphonesimulator -I/Users/raymondhs/iRemember/build/Debug-iphonesimulator/include -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386 -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources -include /var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-eywevagpgdajfqgzzbsmcmpzyzaf/iRemember_Prefix.pch -c /Users/raymondhs/iRemember/Classes/StudyPlanViewController.m -o /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/StudyPlanViewController.o0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberAppDelegate.o "/Users/raymondhs/iRemember Project/Classes/iRememberAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s322718233.446960
+e322718233.703249
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberAppDelegate.o
+x/Users/raymondhs/iRemember Project/Classes/iRememberAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/raymondhs/iRemember Project/Classes/iRememberAppDelegate.m322718233#322718233#0(0"0(0#0#65"/Users/raymondhs/iRemember Project/Classes/iRememberAppDelegate.m8602064928#1972"    cd "/Users/raymondhs/iRemember Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator" "-I/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/include" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-dhnnnnyzxvobydfjttpekfquxlyg/iRemember_Prefix.pch -c "/Users/raymondhs/iRemember Project/Classes/iRememberAppDelegate.m" -o "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberAppDelegate.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberAppDelegate.o "/Users/zyb/iRemember/iRemember Project copy/Classes/iRememberAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323179350.872787
+e323179351.007287
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberAppDelegate.o
+x/Users/zyb/iRemember/iRemember Project copy/Classes/iRememberAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/zyb/iRemember/iRemember Project copy/Classes/iRememberAppDelegate.m323179350#323179351#0(0"0(0#0#74"/Users/zyb/iRemember/iRemember Project copy/Classes/iRememberAppDelegate.m8618974848#2071"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/Classes/iRememberAppDelegate.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberAppDelegate.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberAppDelegate.o /Users/raymondhs/iRemember/Classes/iRememberAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s322558941.988245
+e322558943.000459
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberAppDelegate.o
+x/Users/raymondhs/iRemember/Classes/iRememberAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/raymondhs/iRemember/Classes/iRememberAppDelegate.m322558941#322558943#0(0"0(0#0#57"/Users/raymondhs/iRemember/Classes/iRememberAppDelegate.m8617375072#1862"    cd /Users/raymondhs/iRemember    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap -iquote /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap -F/Users/raymondhs/iRemember/build/Debug-iphonesimulator -I/Users/raymondhs/iRemember/build/Debug-iphonesimulator/include -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386 -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources -include /var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-eywevagpgdajfqgzzbsmcmpzyzaf/iRemember_Prefix.pch -c /Users/raymondhs/iRemember/Classes/iRememberAppDelegate.m -o /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberAppDelegate.o0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberViewController.o "/Users/raymondhs/iRemember Project/Classes/iRememberViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s322718233.672849
+e322718233.765540
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberViewController.o
+x/Users/raymondhs/iRemember Project/Classes/iRememberViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/raymondhs/iRemember Project/Classes/iRememberViewController.m322718233#322718233#0(0"0(0#0#68"/Users/raymondhs/iRemember Project/Classes/iRememberViewController.m8602171872#1978"    cd "/Users/raymondhs/iRemember Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator" "-I/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/include" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-dhnnnnyzxvobydfjttpekfquxlyg/iRemember_Prefix.pch -c "/Users/raymondhs/iRemember Project/Classes/iRememberViewController.m" -o "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberViewController.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberViewController.o "/Users/zyb/iRemember/iRemember Project copy/Classes/iRememberViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323179350.873794
+e323179350.954263
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberViewController.o
+x/Users/zyb/iRemember/iRemember Project copy/Classes/iRememberViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@85"Compile /Users/zyb/iRemember/iRemember Project copy/Classes/iRememberViewController.m323179350#323179350#0(0"0(0#0#77"/Users/zyb/iRemember/iRemember Project copy/Classes/iRememberViewController.m8620678400#2077"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/Classes/iRememberViewController.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberViewController.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberViewController.o /Users/raymondhs/iRemember/Classes/iRememberViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s322558941.989301
+e322558942.997824
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberViewController.o
+x/Users/raymondhs/iRemember/Classes/iRememberViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/raymondhs/iRemember/Classes/iRememberViewController.m322558941#322558942#0(0"0(0#0#60"/Users/raymondhs/iRemember/Classes/iRememberViewController.m8614929920#1868"    cd /Users/raymondhs/iRemember    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap -iquote /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap -F/Users/raymondhs/iRemember/build/Debug-iphonesimulator -I/Users/raymondhs/iRemember/build/Debug-iphonesimulator/include -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386 -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources -include /var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-eywevagpgdajfqgzzbsmcmpzyzaf/iRemember_Prefix.pch -c /Users/raymondhs/iRemember/Classes/iRememberViewController.m -o /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRememberViewController.o0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/main.o "/Users/raymondhs/iRemember Project/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s322718233.445554
+e322718233.672734
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/main.o
+x/Users/raymondhs/iRemember Project/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@49"Compile /Users/raymondhs/iRemember Project/main.m322718233#322718233#0(0"0(0#0#41"/Users/raymondhs/iRemember Project/main.m8590343296#1932"    cd "/Users/raymondhs/iRemember Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator" "-I/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/include" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-dhnnnnyzxvobydfjttpekfquxlyg/iRemember_Prefix.pch -c "/Users/raymondhs/iRemember Project/main.m" -o "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/main.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/main.o "/Users/zyb/iRemember/iRemember Project copy/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323168929.625380
+e323168929.763093
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/main.o
+x/Users/zyb/iRemember/iRemember Project copy/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/zyb/iRemember/iRemember Project copy/main.m323168929#323168929#0(0"0(0#0#50"/Users/zyb/iRemember/iRemember Project copy/main.m8621030176#2031"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/main.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/main.o"0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/main.o /Users/raymondhs/iRemember/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s322491119.842190
+e322491120.024128
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/main.o
+x/Users/raymondhs/iRemember/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@41"Compile /Users/raymondhs/iRemember/main.m322491119#322491120#0(0"0(0#0#33"/Users/raymondhs/iRemember/main.m8617436864#1822"    cd /Users/raymondhs/iRemember    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap -iquote /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap -F/Users/raymondhs/iRemember/build/Debug-iphonesimulator -I/Users/raymondhs/iRemember/build/Debug-iphonesimulator/include -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386 -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources -include /var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-eywevagpgdajfqgzzbsmcmpzyzaf/iRemember_Prefix.pch -c /Users/raymondhs/iRemember/main.m -o /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/main.o0#
+
+CCompileC build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/untitled.o "/Users/zyb/iRemember/iRemember Project copy/Classes/untitled.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s323172850.293619
+e323172850.402453
+r1
+xCompileC
+xbuild/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/untitled.o
+x/Users/zyb/iRemember/iRemember Project copy/Classes/untitled.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/zyb/iRemember/iRemember Project copy/Classes/untitled.m323172850#323172850#0(0"0(0#0#62"/Users/zyb/iRemember/iRemember Project copy/Classes/untitled.m8621060384#2047"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -include /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch -c "/Users/zyb/iRemember/iRemember Project copy/Classes/untitled.m" -o "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/untitled.o"0#
+
+CCompileXIB "/Users/raymondhs/iRemember Project/FlashcardView.xib"
+r0
+
+CCompileXIB "/Users/raymondhs/iRemember Project/MainWindow.xib"
+r0
+
+CCompileXIB "/Users/raymondhs/iRemember Project/StudyPlanView.xib"
+r0
+
+CCompileXIB "/Users/raymondhs/iRemember Project/iRememberViewController.xib"
+r0
+
+CCompileXIB "/Users/zyb/iRemember/iRemember Project copy/Classes/untitled.xib"
+r0
+
+CCompileXIB "/Users/zyb/iRemember/iRemember Project copy/FlashcardView.xib"
+s323179003.048109
+e323179003.849150
+r1
+xCompileXIB
+x/Users/zyb/iRemember/iRemember Project copy/FlashcardView.xib
+lSLF07#2@28"CompileXIB FlashcardView.xib323179003#323179003#0(0"0(0#0#61"/Users/zyb/iRemember/iRemember Project copy/FlashcardView.xib8590420800#599"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/FlashcardView.nib" "/Users/zyb/iRemember/iRemember Project copy/FlashcardView.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB "/Users/zyb/iRemember/iRemember Project copy/MainWindow.xib"
+r0
+
+CCompileXIB "/Users/zyb/iRemember/iRemember Project copy/StudyPlanView.xib"
+r0
+
+CCompileXIB "/Users/zyb/iRemember/iRemember Project copy/iRememberViewController.xib"
+r0
+
+CCompileXIB /Users/raymondhs/iRemember/Flashcard.xib
+r0
+
+CCompileXIB /Users/raymondhs/iRemember/FlashcardView.xib
+s322558939.447090
+e322558941.987959
+r1
+xCompileXIB
+x/Users/raymondhs/iRemember/FlashcardView.xib
+lSLF07#2@28"CompileXIB FlashcardView.xib322558939#322558941#0(0"0(0#0#44"/Users/raymondhs/iRemember/FlashcardView.xib8617664640#542"    cd /Users/raymondhs/iRemember    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/FlashcardView.nib /Users/raymondhs/iRemember/FlashcardView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/raymondhs/iRemember/MainWindow.xib
+s322491117.769213
+e322491118.265928
+r1
+xCompileXIB
+x/Users/raymondhs/iRemember/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib322491117#322491118#0(0"0(0#0#41"/Users/raymondhs/iRemember/MainWindow.xib8617283680#536"    cd /Users/raymondhs/iRemember    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/MainWindow.nib /Users/raymondhs/iRemember/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/raymondhs/iRemember/StudyPlanView.xib
+s322558939.447819
+e322558941.812626
+r1
+xCompileXIB
+x/Users/raymondhs/iRemember/StudyPlanView.xib
+lSLF07#2@28"CompileXIB StudyPlanView.xib322558939#322558941#0(0"0(0#0#44"/Users/raymondhs/iRemember/StudyPlanView.xib8615783968#542"    cd /Users/raymondhs/iRemember    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/StudyPlanView.nib /Users/raymondhs/iRemember/StudyPlanView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/raymondhs/iRemember/iRememberViewController.xib
+s322491117.771376
+e322491118.350042
+r1
+xCompileXIB
+x/Users/raymondhs/iRemember/iRememberViewController.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@38"CompileXIB iRememberViewController.xib322491117#322491118#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#54"/Users/raymondhs/iRemember/iRememberViewController.xib8616053376#562"    cd /Users/raymondhs/iRemember    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/iRememberViewController.nib /Users/raymondhs/iRemember/iRememberViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CGenerateDSYMFile "/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app.dSYM" "/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app/iRemember"
+s322718234.346661
+e322718234.424282
+r1
+xGenerateDSYMFile
+x/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app.dSYM
+x/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app/iRemember
+lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/iRemember.app.dSYM build/Debug-iphonesimulator/iRemember.app/iRemember322718234#322718234#0(0"0(0#0#86"/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app/iRemember8603056192#383"    cd "/Users/raymondhs/iRemember Project"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app/iRemember" -o "/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app.dSYM"0#
+
+CGenerateDSYMFile "/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app.dSYM" "/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/iRemember"
+s323179452.704630
+e323179452.727497
+r1
+xGenerateDSYMFile
+x/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app.dSYM
+x/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/iRemember
+lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/iRemember.app.dSYM build/Debug-iphonesimulator/iRemember.app/iRemember323179452#323179452#0(0"0(0#0#95"/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/iRemember8617434656#410"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/iRemember" -o "/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app.dSYM"0#
+
+CGenerateDSYMFile /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app.dSYM /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/iRemember
+s322558943.201179
+e322558943.223234
+r1
+xGenerateDSYMFile
+x/Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app.dSYM
+x/Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/iRemember
+lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/iRemember.app.dSYM build/Debug-iphonesimulator/iRemember.app/iRemember322558943#322558943#0(0"0(0#0#78"/Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/iRemember8610992352#353"    cd /Users/raymondhs/iRemember    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/iRemember -o /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app.dSYM0#
+
+CLd "/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app/iRemember" normal i386
+s322718233.831643
+e322718234.346552
+r1
+xLd
+x/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app/iRemember
+xnormal
+xi386
+lSLF07#2@91"Link /Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app/iRemember322718233#322718234#0(0"0(0#0#0"8602625216#900"    cd "/Users/raymondhs/iRemember Project"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk "-L/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator" "-F/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator" -filelist "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRemember.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app/iRemember"0#
+
+CLd "/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/iRemember" normal i386
+s323179452.674485
+e323179452.704509
+r1
+xLd
+x/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/iRemember
+xnormal
+xi386
+lSLF07#2@100"Link /Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/iRemember323179452#323179452#0(0"0(0#0#0"8611424832#945"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk "-L/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" -filelist "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRemember.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/iRemember"0#
+
+CLd /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/iRemember normal i386
+s322558943.099242
+e322558943.201082
+r1
+xLd
+x/Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/iRemember
+xnormal
+xi386
+lSLF07#2@83"Link /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/iRemember322558943#322558943#0(0"0(0#0#0"8615287264#850"    cd /Users/raymondhs/iRemember    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/raymondhs/iRemember/build/Debug-iphonesimulator -F/Users/raymondhs/iRemember/build/Debug-iphonesimulator -filelist /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/Objects-normal/i386/iRemember.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/iRemember0#
+
+CProcessInfoPlistFile "/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app/Info.plist" iRemember-Info.plist
+r0
+
+CProcessInfoPlistFile "/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app/Info.plist" iRemember-Info.plist
+r0
+
+CProcessInfoPlistFile /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/Info.plist iRemember-Info.plist
+s322491117.722355
+e322491117.769095
+r1
+xProcessInfoPlistFile
+x/Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/Info.plist
+xiRemember-Info.plist
+lSLF07#2@28"Process iRemember-Info.plist322491117#322491117#0(0"0(0#0#47"/Users/raymondhs/iRemember/iRemember-Info.plist13229813538947188#449"    cd /Users/raymondhs/iRemember    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility iRemember-Info.plist -genpkginfo /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app/Info.plist0#
+
+CProcessPCH /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch.gch iRemember_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s323168928.179513
+e323168929.625222
+r1
+xProcessPCH
+x/var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch.gch
+xiRemember_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile iRemember_Prefix.pch323168928#323168929#0(0"0(0#0#64"/Users/zyb/iRemember/iRemember Project copy/iRemember_Prefix.pch6877671054364732416#1914"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator" "-I/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/include" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/zyb/iRemember/iRemember Project copy/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -c "/Users/zyb/iRemember/iRemember Project copy/iRemember_Prefix.pch" -o /var/folders/gO/gOJYTOL8F+KeFS4wxJ4WLU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-cndisoqjxdwqpuafsbwyzvdksogy/iRemember_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-dhnnnnyzxvobydfjttpekfquxlyg/iRemember_Prefix.pch.gch iRemember_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s322718231.734905
+e322718233.445363
+r1
+xProcessPCH
+x/var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-dhnnnnyzxvobydfjttpekfquxlyg/iRemember_Prefix.pch.gch
+xiRemember_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile iRemember_Prefix.pch322718231#322718233#0(0"0(0#0#55"/Users/raymondhs/iRemember Project/iRemember_Prefix.pch6877671054364732416#1824"    cd "/Users/raymondhs/iRemember Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap" -iquote "/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap" "-F/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator" "-I/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/include" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386" "-I/Users/raymondhs/iRemember Project/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources" -c "/Users/raymondhs/iRemember Project/iRemember_Prefix.pch" -o /var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-dhnnnnyzxvobydfjttpekfquxlyg/iRemember_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-eywevagpgdajfqgzzbsmcmpzyzaf/iRemember_Prefix.pch.gch iRemember_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s322491118.666572
+e322491119.841958
+r1
+xProcessPCH
+x/var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-eywevagpgdajfqgzzbsmcmpzyzaf/iRemember_Prefix.pch.gch
+xiRemember_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile iRemember_Prefix.pch322491118#322491119#0(0"0(0#0#47"/Users/raymondhs/iRemember/iRemember_Prefix.pch8615023584#1724"    cd /Users/raymondhs/iRemember    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-generated-files.hmap -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-own-target-headers.hmap -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-all-target-headers.hmap -iquote /Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/iRemember-project-headers.hmap -F/Users/raymondhs/iRemember/build/Debug-iphonesimulator -I/Users/raymondhs/iRemember/build/Debug-iphonesimulator/include -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources/i386 -I/Users/raymondhs/iRemember/build/iRemember.build/Debug-iphonesimulator/iRemember.build/DerivedSources -c /Users/raymondhs/iRemember/iRemember_Prefix.pch -o /var/folders/ze/zer12xYNEUGL5onJBmgH9k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iRemember_Prefix-eywevagpgdajfqgzzbsmcmpzyzaf/iRemember_Prefix.pch.gch0#
+
+CTouch "/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app"
+s322718234.424379
+e322718234.439628
+r1
+xTouch
+x/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app
+lSLF07#2@82"Touch /Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app322718234#322718234#0(0"0(0#0#0"8602796512#276"    cd "/Users/raymondhs/iRemember Project"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/raymondhs/iRemember Project/build/Debug-iphonesimulator/iRemember.app"0#
+
+CTouch "/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app"
+s323179452.727592
+e323179452.730295
+r1
+xTouch
+x/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app
+lSLF07#2@91"Touch /Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app323179452#323179452#0(0"0(0#0#0"8615270080#294"    cd "/Users/zyb/iRemember/iRemember Project copy"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/zyb/iRemember/iRemember Project copy/build/Debug-iphonesimulator/iRemember.app"0#
+
+CTouch /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app
+s322558943.223326
+e322558943.256624
+r1
+xTouch
+x/Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app
+lSLF07#2@74"Touch /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app322558943#322558943#0(0"0(0#0#0"8614339392#256"    cd /Users/raymondhs/iRemember    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/raymondhs/iRemember/build/Debug-iphonesimulator/iRemember.app0#
+
