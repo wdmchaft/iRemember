@@ -55,4 +55,19 @@ CFComparisonResult compareWordsWithStatisticsInGame(const void* val1, const void
 	}
 }
 
+-(void)encodeWithCoder:(NSCoder *)coder{
+	[coder encodeObject:listName forKey:@"listName"];
+	[coder encodeObject:wordsWithStatistics forKey:@"wordsWithStatistics"];
+	[coder encodeObject:wordsWithStatisticsInGame forKey:@"wordsWithStatisticsInGame"];
+}
+
+-(id)initWithCoder:(NSCoder *)decoder{
+	if([super init]!=nil){
+		[self setListName:[decoder decodeObjectForKey:@"listName"]];
+		[self setWordsWithStatistics:[decoder decodeObjectForKey:@"wordsWithStatistics"]];
+		[self setWordsWithStatisticsInGame:[decoder decodeObjectForKey:@"wordsWithStatisticsInGame"]];
+	}
+	return self;
+}
+
 @end

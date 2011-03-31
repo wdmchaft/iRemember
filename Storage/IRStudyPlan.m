@@ -17,6 +17,23 @@
 	[wordList updateStatisticsWithList:list inGame:gameName];
 }
 
+-(void)encodeWithCoder:(NSCoder*)coder{
+	[coder encodeObject:name forKey:@"name"];
+	[coder encodeObject:plannedReviewDates forKey:@"plannedReviewDates"];
+	[coder encodeObject:actualReviewDates forKey:@"actualReviewDates"];
+	[coder encodeInteger:elapsedDay forKey:@"elapsedDay"];
+}
+
+-(id)initWithCoder:(NSCoder*)decoder{
+	if([super init]!=nil){
+		[self setName:[decoder decodeObjectForKey:@"name"]];
+		[self setPlannedReviewDates:[decoder decodeObjectForKey:@"plannedReviewDates"]];
+		[self setActualReviewDates:[decoder decodeObjectForKey:@"actualReviewDates"]];
+		[self setElapsedDay:[decoder decodeIntegerForKey:@"elapsedDay"]];
+	}
+	return self;
+}
+
 -(void)dealloc{
 	[wordList release];
 	[plannedReviewDates release];

@@ -39,10 +39,11 @@
 // EFFECTS: add a word with the specified parameters
 //          return the created Word object
 
--(int)addWords:(NSArray*)wordList;
-// MODIFIES: words in self
+-(NSArray*)addWords:(NSArray*)wordList;
+// MODIFIES: words in self, words in wordList as well
 // EFFECTS: add the words in the given list into this list
-//			returns the actual number of words added to the list
+//			if there exist a word with the same ID, the new word is not added
+//			returns the list of words that are not added
 
 -(BOOL)removeWordWithID:(NSInteger)wordID;
 // MODIFIES: words in self
