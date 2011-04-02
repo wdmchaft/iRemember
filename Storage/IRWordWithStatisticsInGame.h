@@ -28,4 +28,7 @@
 -(CGFloat)getAverageReactionTime;
 // EFFECTS: returns the average reaction time
 
+-(void)updateStatWithStat:(IRWordWithStatisticsInGame*)word;
+// EFFECTS: update the statistics in this object with the one specified by word
+
 @end

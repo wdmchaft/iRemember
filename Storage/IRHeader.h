@@ -6,7 +6,10 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#define DEFAULT_LANGUAGE @"Indonesian"
+#define LANG_CHINESE @"Chinese"
+#define LANG_ENGLISH @"English"
+#define LANG_INDONESIAN @"Indonesian"
+#define DEFAULT_LANGUAGE LANG_ENGLISH
 
 typedef enum {
 	kGameStartAll = 0,
