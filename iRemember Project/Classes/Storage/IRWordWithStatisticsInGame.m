@@ -25,6 +25,12 @@
 	return (CGFloat)totalReactionTime/[self usedCount];
 }
 
+-(void)updateStatWithStat:(IRWordWithStatisticsInGame *)word{
+	[self setCorrectCount:[self correctCount]+[word correctCount]];
+	[self setIncorrectCount:[self incorrectCount]+[word incorrectCount]];
+	[self setTotalReactionTime:[self totalReactionTime]+[word totalReactionTime]];
+}
+
 -(void)dealloc{
 	[super dealloc];
 }

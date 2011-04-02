@@ -21,6 +21,14 @@ CFComparisonResult compareWordsWithStatisticsInGame(const void* val1, const void
 	return 0;
 }
 
+-(id)initWithLanguage:(NSString *)lang{
+	if([super initWithLanguage:lang]!=nil){
+		wordsWithStatistics = [[NSMutableArray alloc] init];
+		wordsWithStatisticsInGame = [[NSMutableDictionary alloc] init];
+	}
+	return self;
+}
+
 -(NSArray*)studied{
 	NSMutableArray* result = [[NSMutableArray alloc] init];
 	int i=0;
@@ -47,10 +55,11 @@ CFComparisonResult compareWordsWithStatisticsInGame(const void* val1, const void
 																currentWord,
 																(CFComparatorFunction)compareWordsWithStatisticsInGame,
 																NULL);
-		if([[gameStatistics objectAtIndex:insertIndex] wordID]!=[currentWord wordID]){
+		IRWordWithStatisticsInGame* match = [gameStatistics objectAtIndex:insertIndex];
+		if([match wordID]!=[currentWord wordID]){
 			[gameStatistics insertObject:[list objectAtIndex:i] atIndex:insertIndex];
 		} else {
-			[gameStatistics replaceObjectAtIndex:insertIndex withObject:currentWord];
+			[match updateStatWithStat:currentWord];
 		}
 	}
 }
@@ -68,6 +77,12 @@ CFComparisonResult compareWordsWithStatisticsInGame(const void* val1, const void
 		[self setWordsWithStatisticsInGame:[decoder decodeObjectForKey:@"wordsWithStatisticsInGame"]];
 	}
 	return self;
+}
+
+-(void)dealloc{
+	[wordsWithStatistics release];
+	[wordsWithStatisticsInGame release];
+	[super dealloc];
 }
 
 @end
