@@ -24,6 +24,19 @@
 	return self;
 }
 
+-(BOOL)isEqual:(IRWord*)word{
+	if(self==nil || word==nil) return NO;
+	return (self.wordID == word.wordID&&
+		   self.englishWord == word.englishWord &&
+		   [self.translatedWord isEqual: word.translatedWord] &&
+		   [self.language isEqual: word.language] &&
+		   [self.pronunciation isEqual: word.pronunciation] &&
+		   self.difficulty == word.difficulty &&
+		   [self.example isEqual: word.example] &&
+		   [self.explanation isEqual: word.explanation] &&
+		   [self.soundFileName isEqual: word.soundFileName]);
+}
+
 -(void)encodeWithCoder:(NSCoder*)coder{
 	[coder encodeInteger:wordID forKey:@"wordID"];
 	[coder encodeObject:englishWord forKey:@"englishWord"];
@@ -53,6 +66,6 @@
 
 -(void)dealloc{
 	[super dealloc];
-}
+}	   
 
 @end
