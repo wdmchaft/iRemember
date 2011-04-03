@@ -29,7 +29,6 @@ CFComparisonResult compareWords(const void *val1, const void *val2, void *contex
 }
 
 -(id)init{
-	[super init];
 	return [self initWithLanguage:DEFAULT_LANGUAGE];
 }
 

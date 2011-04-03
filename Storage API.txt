@@ -1,0 +1,85 @@
+IRAppState
+Data members:
+NSArray* wordsForGame;
+NSMutableArray* libraries;
+IRStudyPlan* currentStudyPlan;
+NSMutableDictionary* wordLists;
+Methods:
++(id)currentState;
+-(void)save;
+-(void)loadState;
+-(IRLibrary*)libraryWithLanguage:(NSString*)lang;
+-(void)addLibrary:(IRLibrary*)library;
+-(void)mergeLibrary:(IRLibrary*)library;
+-(void)removeLibrary:(NSString*)lang;
+-(IRWordList*)wordListWithName:(NSString*)name;
+-(void)addWordList:(IRWordList*)wordList;
+-(void)removeWordList:(NSString*)name;
+-(void)setWordsForGameWithMode:(GameStartMode)mode;
+-(NSArray*)wordsForGame;
+-(void)updateStatisticsWithList:(NSArray*)list inGame:(NSString *)gameName;
+
+IRLibrary
+Data members:
+NSMutableArray* words;
+NSString* language;
+Methods:
+-(BOOL)checkIDConsistency;
+-(NSInteger)availableID;
+-(NSArray*)availableIDWithCount:(int)count;
+-(IRWord*)wordWithID:(NSInteger)wordID;
+-(IRWord*)wordWithString:(NSString*)theWord;
+-(IRWord*)addWord:(NSString*)eng translation:(NSString*)trans lang:(NSString*)lang;
+-(NSArray*)addWords:(NSArray*)wordList;
+-(BOOL)removeWordWithID:(NSInteger)wordID;
+-(BOOL)removeWordWithString:(NSString*)theWord;
+-(NSInteger)count;
+
+IRWordList -> IRLibrary
+Data members:
+NSString* listName;
+NSMutableArray* wordsWithStatistics;
+NSMutableDictionary* wordsWithStatisticsInGame;
+Methods:
+-(NSArray*)studied;
+-(void)updateStatisticsWithList:(NSArray*)list inGame:(NSString *)gameName;
+
+IRStudyPlan
+Data members:
+NSString* name;
+IRWordList* wordList;
+NSMutableArray* plannedReviewDates;
+NSMutableArray* actualReviewDates;
+NSInteger elapsedDay;
+Methods:
+-(void)updateStatisticsWithList:(NSArray*)list inGame:(NSString *)gameName;
+
+IRWord
+Data members:
+NSInteger wordID;
+NSInteger difficulty;
+NSString* englishWord;
+NSString* translatedWord;
+NSString* language;
+NSString* pronunciation;
+NSString* example;
+NSString* explanation;
+NSString* soundFileName;
+
+IRWordWithStatistics
+Data members:
+NSInteger wordID;
+NSArray* reviewDates;
+BOOL isStudied;
+
+IRWordWithStatisticsInGame
+Data members:
+NSInteger wordID;
+NSInteger correctCount;
+NSInteger incorrectCount;
+NSInteger totalReactionTime;
+Methods:
+-(NSInteger)usedCount;
+-(void)addTotalReactionTime:(NSInteger)time;
+-(CGFloat)getAverageReactionTime;
+-(void)updateStatWithStat:(IRWordWithStatisticsInGame*)word;

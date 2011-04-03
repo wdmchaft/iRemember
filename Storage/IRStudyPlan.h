@@ -23,6 +23,8 @@
 @property(nonatomic,retain) NSMutableArray* actualReviewDates;
 @property(nonatomic) NSInteger elapsedDay;
 
+-(id)initWithName:(NSString*)nam wordList:(IRWordList*)list;
+
 -(void)updateStatisticsWithList:(NSArray*)list inGame:(NSString *)gameName;
 // EFFECTS: updates the words with statistics in game
 

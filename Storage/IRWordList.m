@@ -21,8 +21,18 @@ CFComparisonResult compareWordsWithStatisticsInGame(const void* val1, const void
 	return 0;
 }
 
+-(id)initWithName:(NSString*)name lang:(NSString*)lang{
+	if([super initWithLanguage:lang]!=nil){
+		[self setListName:name];
+		wordsWithStatistics = [[NSMutableArray alloc] init];
+		wordsWithStatisticsInGame = [[NSMutableDictionary alloc] init];
+	}
+	return self;
+}
+
 -(id)initWithLanguage:(NSString *)lang{
 	if([super initWithLanguage:lang]!=nil){
+		[self setName:@"default"];
 		wordsWithStatistics = [[NSMutableArray alloc] init];
 		wordsWithStatisticsInGame = [[NSMutableDictionary alloc] init];
 	}

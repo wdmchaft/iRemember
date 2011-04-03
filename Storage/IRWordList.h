@@ -24,6 +24,8 @@
 @property(nonatomic,retain) NSMutableDictionary* wordsWithStatisticsInGame;
 // The collection of word lists for each game statistics
 
+-(id)initWithName:(NSString*)name lang:(NSString*)lang;
+
 -(NSArray*)studied;
 // EFFECTS: return the words which have been studied
 
