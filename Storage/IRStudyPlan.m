@@ -13,6 +13,17 @@
 
 @synthesize name, wordList, plannedReviewDates, actualReviewDates, elapsedDay;
 
+-(id)initWithName:(NSString*)nam wordList:(IRWordList*)list{
+	if([super init]!=nil){
+		[self setName:nam];
+		[self setWordList:list];
+		plannedReviewDates = [[NSMutableArray alloc] init];
+		actualReviewDates = [[NSMutableArray alloc] init];
+		[self setElapsedDay:0];
+	}
+	return self;
+}
+
 -(void)updateStatisticsWithList:(NSArray*)list inGame:(NSString *)gameName{
 	[wordList updateStatisticsWithList:list inGame:gameName];
 }

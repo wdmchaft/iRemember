@@ -24,6 +24,7 @@ static IRAppState* currentState;
 	if([super init]!=nil){
 		libraries = [[NSMutableArray alloc] init];
 		currentStudyPlan = [[IRStudyPlan alloc] init];
+		wordLists = [[NSMutableDictionary alloc] init];
 	}
 	return self;
 }
