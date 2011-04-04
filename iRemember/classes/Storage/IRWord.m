@@ -26,15 +26,37 @@
 
 -(BOOL)isEqual:(IRWord*)word{
 	if(self==nil || word==nil) return NO;
-	return (self.wordID == word.wordID&&
-		   [self.englishWord isEqual:word.englishWord] &&
-		   [self.translatedWord isEqual: word.translatedWord] &&
-		   [self.language isEqual: word.language] &&
-		   [self.pronunciation isEqual: word.pronunciation] &&
-		   self.difficulty == word.difficulty &&
-		   [self.example isEqual: word.example] &&
-		   [self.explanation isEqual: word.explanation] &&
-		   [self.soundFileName isEqual: word.soundFileName]);
+	else
+	{
+		BOOL result = YES;
+		result = result &&self.wordID == word.wordID;
+		result = result &&[self.englishWord isEqual: word.englishWord];
+		result = result &&[self.translatedWord isEqual: word.translatedWord];
+		result = result &&[self.language isEqual:word.language];
+		
+		if(self.pronunciation!=nil&&word.pronunciation!=nil)
+			result = result && [self.pronunciation isEqual: word.pronunciation];
+		else 
+			result = result && self.pronunciation == word.pronunciation;
+		result = result && self.difficulty==word.difficulty;
+		
+		if(self.example!=nil&&word.example!=nil)
+			result = result && [self.example isEqual: word.example];
+		else 
+			result = result && self.example ==word.example;
+
+		if(self.explanation!=nil&&word.explanation!=nil)
+			result = result && [self.explanation isEqual: word.explanation];
+		else 
+			result = result && self.explanation == word.explanation;
+
+		if(self.soundFileName!=nil&&word.soundFileName!=nil)
+			result = result && [self.soundFileName isEqual: word.soundFileName];
+		else 
+			result = result && self.soundFileName == word.soundFileName;
+
+		return result;
+	}
 }
 
 -(void)encodeWithCoder:(NSCoder*)coder{
