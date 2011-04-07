@@ -7,6 +7,7 @@
 //
 
 #import "IRWordList.h"
+#import "IRHeader.h"
 #import <string.h>
 
 @implementation IRWordList
@@ -21,7 +22,15 @@ CFComparisonResult compareWordsWithStatisticsInGame(const void* val1, const void
 	return 0;
 }
 
--(id)initWithName:(NSString*)name lang:(NSString*)lang{
+-(id)init{
+	return [self initWithLanguage:DEFAULT_LANGUAGE];
+}
+
+-(id)initWithLanguage:(NSString *)lang{
+	return [self initWithLanguage:lang name:@"default"];
+}
+
+-(id)initWithLanguage:(NSString *)lang name:(NSString*)name{
 	if([super initWithLanguage:lang]!=nil){
 		[self setListName:name];
 		wordsWithStatistics = [[NSMutableArray alloc] init];
@@ -30,22 +39,57 @@ CFComparisonResult compareWordsWithStatisticsInGame(const void* val1, const void
 	return self;
 }
 
--(id)initWithLanguage:(NSString *)lang{
-	if([super initWithLanguage:lang]!=nil){
-		[self setListName:@"default"];
-		wordsWithStatistics = [[NSMutableArray alloc] init];
-		wordsWithStatisticsInGame = [[NSMutableDictionary alloc] init];
-	}
-	return self;
-}
-
--(NSArray*)studied{
+-(NSArray*)studiedWords{
 	NSMutableArray* result = [[NSMutableArray alloc] init];
 	int i=0;
 	for(i=0; i<[wordsWithStatistics count]; i++){
 		IRWordWithStatistics* wordTaken = [wordsWithStatistics objectAtIndex:i];
 		if([wordTaken isStudied]){
 			[result addObject:[self wordWithID:[wordTaken wordID]]];
+		}
+	}
+	return [result autorelease];
+}
+
+-(NSArray*)unstudiedWords{
+	NSMutableArray* result = [[NSMutableArray alloc] init];
+	int i=0;
+	for(i=0; i<[wordsWithStatistics count]; i++){
+		IRWordWithStatistics* wordTaken = [wordsWithStatistics objectAtIndex:i];
+		if(![wordTaken isStudied]){
+			[result addObject:[self wordWithID:[wordTaken wordID]]];
+		}
+	}
+	return [result autorelease];
+}
+
+-(NSArray*)statisticsInGame:(NSString *)gameName{
+	return [wordsWithStatisticsInGame objectForKey:gameName];
+}
+
+-(NSArray*)statisticsOverview{
+	NSMutableArray* result = [[NSMutableArray alloc] initWithCapacity:[self count]];
+	for(NSArray* gameStatistics in wordsWithStatisticsInGame){
+		int i=0, idx=0;
+		for(i=0; i<[gameStatistics count]; i++){
+			IRWordWithStatisticsInGame* wordStat = [gameStatistics objectAtIndex:i];
+			BOOL shouldAdd = YES;
+			while(idx<[result count]){
+				IRWordWithStatisticsInGame* curWord = [result objectAtIndex:idx];
+				if([curWord wordID]==[wordStat wordID]){
+					[curWord updateStatWithStat:wordStat];
+					shouldAdd = NO;
+					break;
+				} else if([curWord wordID]>[wordStat wordID]){
+					shouldAdd = YES;
+				} else {
+					idx++;
+				}
+			}
+			if(shouldAdd){
+				[result insertObject:wordStat atIndex:idx];
+			}
+			idx++;
 		}
 	}
 	return [result autorelease];
@@ -90,6 +134,7 @@ CFComparisonResult compareWordsWithStatisticsInGame(const void* val1, const void
 }
 
 -(void)dealloc{
+	[listName release];
 	[wordsWithStatistics release];
 	[wordsWithStatisticsInGame release];
 	[super dealloc];

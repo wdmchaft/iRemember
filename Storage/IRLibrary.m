@@ -115,7 +115,36 @@ CFComparisonResult compareWords(const void *val1, const void *val2, void *contex
 	}
 }
 
+-(NSArray*)wordsWithPrefix:(NSString*)pre maxSize:(NSInteger)num{
+	NSMutableArray* result = [[NSMutableArray alloc] init];
+	int limit = num;
+	if(limit<=0) limit = MAX_SEARCH_SIZE;
+	int i=0;
+	NSString* higStr = [[pre lowercaseString] stringByAppendingString:@"~"];
+	IRWord* lowWord = [[IRWord alloc] initWithID:0 englishWord:[pre lowercaseString] translated:@"" explanation:@"" pronunciation:@"" lang:@""];
+	IRWord* higWord = [[IRWord alloc] initWithID:0 englishWord:higStr translated:@"" explanation:@"" pronunciation:@"" lang:@""];
+	NSInteger low = (NSInteger)CFArrayBSearchValues((CFArrayRef)words,
+													CFRangeMake(0, CFArrayGetCount((CFArrayRef)words)),
+													lowWord,
+													(CFComparatorFunction)compareWords,
+													NULL);
+	NSInteger highLimit = (NSInteger)CFArrayBSearchValues((CFArrayRef)words,
+													 CFRangeMake(0, CFArrayGetCount((CFArrayRef)words)),
+													 higWord,
+													 (CFComparatorFunction)compareWords,
+													 NULL);
+	[higWord release];
+	[lowWord release];
+	NSInteger high = fmin(low+limit,highLimit);
+	for(i=low; i<high; i++){
+		[result addObject:[words objectAtIndex:i]];
+	}
+	
+	return [result autorelease];
+}
+
 -(IRWord*)addWord:(NSString *)eng translation:(NSString *)trans lang:(NSString *)lang{
+	if(![lang isEqual:language]) return nil;
 	IRWord* word = [[IRWord alloc] initWithID:[self availableID] englishWord:eng translated:trans lang:lang];
 	NSInteger insertIndex = (NSInteger)CFArrayBSearchValues((CFArrayRef)words,
                                                           CFRangeMake(0, CFArrayGetCount((CFArrayRef)words)),
@@ -133,7 +162,7 @@ CFComparisonResult compareWords(const void *val1, const void *val2, void *contex
 	NSMutableArray* unadded = [[[NSMutableArray alloc] init] autorelease];
 	for(int i=0; i<[wordList count]; i++){
 		IRWord* word = [wordList objectAtIndex:i];
-		if([self wordWithID:[word wordID]]!=nil){
+		if(![[word language] isEqual:language]||[self wordWithID:[word wordID]]!=nil){
 			[unadded addObject:word];
 			continue;
 		}
@@ -175,15 +204,16 @@ CFComparisonResult compareWords(const void *val1, const void *val2, void *contex
 }
 
 -(id)initWithCoder:(NSCoder*)decoder{
-	if([super init]!=nil && [self init]!=nil){
+	if([super init]!=nil){
 		[self setWords:[decoder decodeObjectForKey:@"words"]];
-		[self setLanguage:[decoder decodeObjectForKey:@"language"] ];
+		[self setLanguage:[decoder decodeObjectForKey:@"language"]];
 	}
 	return self;
 }
 
 -(void)dealloc{
 	[words release];
+	[language release];
 	[super dealloc];
 }
 

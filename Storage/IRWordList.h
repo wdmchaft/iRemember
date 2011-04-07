@@ -24,12 +24,29 @@
 @property(nonatomic,retain) NSMutableDictionary* wordsWithStatisticsInGame;
 // The collection of word lists for each game statistics
 
--(id)initWithName:(NSString*)name lang:(NSString*)lang;
+-(id)init;
+// Create a word list with default language as defined in IRHeader.h
 
--(NSArray*)studied;
+-(id)initWithLanguage:(NSString *)lang name:(NSString*)name;
+// Create a word list with specified language and name
+
+-(NSArray*)studiedWords;
 // EFFECTS: return the words which have been studied
 
+-(NSArray*)unstudiedWords;
+// EFFECTS: returns the list of words which have not been studied
+
+-(NSArray*)statisticsInGame:(NSString*)gameName;
+// EFFECTS: returns the list of wordWithStatisticsInGame for a specified game
+//			returns nil if there is no such game
+
+-(NSArray*)statisticsOverview;
+// EFFECTS: returns the list of wordWithStatisticsInGame by combining the statistics
+//			from all games(reviews)
+
 -(void)updateStatisticsWithList:(NSArray*)list inGame:(NSString *)gameName;
+// MODIFIES: the respective statistics for the game
 // EFFECTS: updates the words with statistics in game
+//			This method is usually called after a review is finished
 
 @end

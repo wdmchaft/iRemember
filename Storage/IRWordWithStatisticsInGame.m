@@ -31,6 +31,22 @@
 	[self setTotalReactionTime:[self totalReactionTime]+[word totalReactionTime]];
 }
 
+-(void)encodeWithCoder:(NSCoder*)coder{
+	[coder encodeInteger:wordID forKey:@"wordID"];
+	[coder encodeInteger:correctCount forKey:@"correctCount"];
+	[coder encodeInteger:incorrectCount forKey:@"incorrectCount"];
+	[coder encodeInteger:totalReactionTime forKey:@"totalReactionTime"];
+}
+
+-(id)initWithCoder:(NSCoder*)decoder{
+	if([super init]!=nil){
+		[self setWordID:[decoder decodeIntegerForKey:@"wordID"]];
+		[self setCorrectCount:[decoder decodeIntegerForKey:@"decoder"]];
+		[self setIncorrectCount:[decoder decodeIntegerForKey:@"incorrectCOunt"]];
+	}
+	return self;
+}
+
 -(void)dealloc{
 	[super dealloc];
 }

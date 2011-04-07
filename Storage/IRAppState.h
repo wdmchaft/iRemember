@@ -24,14 +24,18 @@
 @property(nonatomic,retain) NSMutableDictionary* wordLists;
 // The list of word lists, using the listName as the key for the IRWordList object
 
+@property(nonatomic,retain) NSMutableDictionary* studyPlanList;
+
 +(id)currentState;
 // EFFECTS: return the current state of the app
 
 -(void)save;
-// EFFECTS: save current state to file
+// EFFECTS: save current state to Documents folder
 
 -(void)loadState;
-// EFFECTS: load a state from a file
+// EFFECTS: load a state from a file in this order, whichever is available first:
+//			-The file in the user Document folder (mutable, user-configured)
+//			-The file in the resource (immutable)
 
 -(IRLibrary*)libraryWithLanguage:(NSString*)lang;
 // EFFECTS: return the library with the specified language, nil if it doesn't exist
@@ -53,7 +57,7 @@
 -(IRWordList*)wordListWithName:(NSString*)name;
 // EFFECTS: returns the wordList with the specified name, nil if it doesn't exist
 
--(void)addWordList:(IRWordList*)wordList;
+-(BOOL)addWordList:(IRWordList*)wordList;
 // REQUIRES: there is no wordList with the same name
 // MODIFIES: self
 // EFFECTS : add the specified wordlist into current list of wordList
@@ -63,13 +67,29 @@
 // MODIFIES: self
 // EFFECTS : remove the wordlist with the specified name
 
--(void)setWordsForGameWithMode:(GameStartMode)mode;
+-(BOOL)addStudyPlan:(IRStudyPlan*)studyPlan;
+// EFFECTS: adds the specified studyplan into the list of study plan
+//			returns YES if previously there is no study plan with the same name
+//			returns NO otherwise
+
+-(IRStudyPlan*)studyPlanWithName:(NSString*)planName;
+// EFFECTS: returns the study plan with the specified name
+//			returns nil if there is no study plan with such name
+
+-(BOOL)removeStudyPlanWithName:(NSString*)planName;
+// EFFECTS: removes the study plan with the specified name
+//			return YES if there exists a study plan with that name, and removed
+//			return NO otherwise
+
+-(void)setWordsForGameWithMode:(IRGameStartMode)mode;
 // EFFECTS: set up the word list to be used by the game
-// This method is not yet finalized, the method header may change
+//			The word list is set up according to the mode
+//			as defined in the IRHeader.h
 
 -(NSArray*)wordsForGame;
 // REQUIRES: setWordsForGameWithMode is called before this function
-// EFFECTS: return the list of words that can be used in the game
+// EFFECTS: return the autoreleased list of words that can be used in the game
+//			so this method can only be called once per setWordsForGameWithMode
 
 -(void)updateStatisticsWithList:(NSArray*)list inGame:(NSString *)gameName;
 // REQUIRES: list contain IRWordWithStatisticsInGame objects that contain updated contents

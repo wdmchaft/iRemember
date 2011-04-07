@@ -30,9 +30,21 @@
 
 -(IRWord*)wordWithID:(NSInteger)wordID;
 // EFFECTS: return the Word object with specified wordID, nil if not found
+// COMPLEXITY : O(N) where N is the size of the list
 
 -(IRWord*)wordWithString:(NSString*)theWord;
 // EFFECTS: return the Word object with the specified english word, nil if not found
+// COMPLEXITY: O(M log N) where M is the length of theWord and N is the size of the list
+
+-(NSArray*)wordsWithPrefix:(NSString*)pre maxSize:(NSInteger)num;
+// EFFECTS: returns the list of words that matches the specified prefix
+//			maxSize will determine the maximum number that will be returned
+//			If num>0 it is the upper limit of the number of words returned
+//			If num<=0 it will return as many words as this method found
+// COMPLEXITY: O(M log N + S) where:
+//			M is the length of prefix,
+//			N is the number of words in the list,
+//			S is the size of the returned result.
 
 -(IRWord*)addWord:(NSString*)eng translation:(NSString*)trans lang:(NSString*)lang;
 // MODIFIES: words in self

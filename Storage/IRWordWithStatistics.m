@@ -13,11 +13,17 @@
 
 @synthesize wordID, reviewDates, isStudied;
 
--(id)initWithID:(NSInteger)id{
+-(void)encodeWithCoder:(NSCoder*)coder{
+	[coder encodeInteger:wordID forKey:@"wordID"];
+	[coder encodeObject:reviewDates forKey:@"reviewDates"];
+	[coder encodeBool:isStudied forKey:@"isStudied"];
+}
+
+-(id)initWithCoder:(NSCoder*)decoder{
 	if([super init]!=nil){
-		[self setWordID:id];
-		[self setReviewDates: [[NSArray alloc] init]];
-		[self setIsStudied: NO];
+		[self setWordID:[decoder decodeIntegerForKey:@"wordID"]];
+		[self setReviewDates:[decoder decodeObjectForKey:@"reviewDates"]];
+		[self setIsStudied:[decoder decodeBoolForKey:@"isStudied"]];
 	}
 	return self;
 }

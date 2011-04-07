@@ -13,28 +13,51 @@
 
 @synthesize wordID, englishWord, translatedWord, language, pronunciation, difficulty, example, explanation, soundFileName;
 
+-(id)init{
+	return [self initWithID:1 englishWord:@"" translated:@"" lang:@""];
+}
+
 -(id)initWithID:(NSInteger)wordId englishWord:(NSString *)eng translated:(NSString *)trans lang:(NSString *)lang{
+	return [self initWithID:wordId englishWord:eng translated:trans explanation:@"" pronunciation:@"" lang:lang];
+}
+
+-(id)initWithID:(NSInteger)wordId englishWord:(NSString *)eng translated:(NSString *)trans explanation:(NSString *)expln pronunciation:(NSString*)pron lang:(NSString *)lang
+{
 	[super init];
 	if(self!=nil){
 		[self setWordID:wordId];
-		[self setEnglishWord:eng];
+		[self setEnglishWord:[[eng lowercaseString] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" \t\n."]]];
 		[self setTranslatedWord:trans];
+		[self setExplanation:expln];
+		[self setPronunciation:pron];
 		[self setLanguage:lang];
+		[self setDifficulty:0];
+		[self setExample:@""];
 	}
 	return self;
 }
 
+-(NSString*)soundFileName{
+	return [NSString stringWithFormat:@"%d%@.mp3",wordID,englishWord];
+}
+
 -(BOOL)isEqual:(IRWord*)word{
 	if(self==nil || word==nil) return NO;
-	return (self.wordID == word.wordID&&
-		   self.englishWord == word.englishWord &&
-		   [self.translatedWord isEqual: word.translatedWord] &&
-		   [self.language isEqual: word.language] &&
-		   [self.pronunciation isEqual: word.pronunciation] &&
-		   self.difficulty == word.difficulty &&
-		   [self.example isEqual: word.example] &&
-		   [self.explanation isEqual: word.explanation] &&
-		   [self.soundFileName isEqual: word.soundFileName]);
+	else
+	{
+		BOOL result = YES;
+		result = result && self.wordID == word.wordID;
+		result = result &&[self.englishWord isEqual: word.englishWord];
+		result = result &&[self.translatedWord isEqual: word.translatedWord];
+		result = result &&[self.language isEqual:word.language];
+		result = result &&[self.pronunciation isEqual: word.pronunciation];
+		result = result && self.difficulty==word.difficulty;
+		result = result &&[self.example isEqual: word.example];
+		result = result &&[self.explanation isEqual: word.explanation];
+		result = result &&[self.soundFileName isEqual: word.soundFileName];
+		
+		return result;
+	}
 }
 
 -(void)encodeWithCoder:(NSCoder*)coder{
@@ -46,11 +69,11 @@
 	[coder encodeInteger:difficulty forKey:@"difficulty"];
 	[coder encodeObject:example forKey:@"example"];
 	[coder encodeObject:explanation forKey:@"explanation"];
-	[coder encodeObject:soundFileName forKey:@"soundFileName"];
 }
 
 -(id)initWithCoder:(NSCoder*)decoder{
 	if([super init]!=nil){
+		
 		[self setWordID:[decoder decodeIntegerForKey:@"wordID"]];
 		[self setEnglishWord:[decoder decodeObjectForKey:@"englishWord"]];
 		[self setTranslatedWord:[decoder decodeObjectForKey:@"translatedWord"]];
@@ -59,13 +82,19 @@
 		[self setDifficulty:[decoder decodeIntegerForKey:@"difficulty"]];
 		[self setExample:[decoder decodeObjectForKey:@"example"]];
 		[self setExplanation:[decoder decodeObjectForKey:@"explanation"]];
-		[self setSoundFileName:[decoder decodeObjectForKey:@"soundFileName"]];
+		 
 	}
 	return self;
 }
 
 -(void)dealloc{
+	[englishWord release];
+	[translatedWord release];
+	[language release];
+	[pronunciation release];
+	[example release];
+	[explanation release];
 	[super dealloc];
-}	   
+}
 
 @end

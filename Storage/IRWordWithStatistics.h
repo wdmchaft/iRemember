@@ -17,6 +17,10 @@
 // The wordID this word with statistics refers to
 
 @property(nonatomic,retain) NSArray* reviewDates;
+// This array contains NSDate object, the date and time when the review is conducted
+
 @property(nonatomic) BOOL isStudied;
+// The flag whether this word has been studied or not
+// The definition of studied is not here
 
 @end
