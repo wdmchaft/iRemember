@@ -55,10 +55,10 @@
 		result = result &&[self.example isEqual: word.example];
 		result = result &&[self.explanation isEqual: word.explanation];
 		result = result &&[self.soundFileName isEqual: word.soundFileName];
-		
 		return result;
 	}
 }
+
 
 -(void)encodeWithCoder:(NSCoder*)coder{
 	[coder encodeInteger:wordID forKey:@"wordID"];

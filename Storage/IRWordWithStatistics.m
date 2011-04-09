@@ -13,6 +13,19 @@
 
 @synthesize wordID, reviewDates, isStudied;
 
+-(id)init{
+	return [self initWithID:0];
+}
+
+-(id)initWithID:(NSInteger)wordId{
+	if([super init]!=nil){
+		wordID = wordId;
+		reviewDates = [[NSMutableArray alloc] init];
+		isStudied = NO;
+	}
+	return self;
+}
+
 -(void)encodeWithCoder:(NSCoder*)coder{
 	[coder encodeInteger:wordID forKey:@"wordID"];
 	[coder encodeObject:reviewDates forKey:@"reviewDates"];

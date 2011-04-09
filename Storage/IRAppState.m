@@ -24,11 +24,11 @@ static IRAppState* currentState;
 	if([super init]!=nil){
 		libraries = [[NSMutableArray alloc] init];
 		currentStudyPlan = [[IRStudyPlan alloc] init];
-		wordLists = [[NSMutableDictionary alloc] init];
-		studyPlanList = [[NSMutableDictionary alloc] init];
-		IRStudyPlan* defaultStudyPlan = [[IRStudyPlan alloc] init];
-		[studyPlanList setObject:defaultStudyPlan forKey:[defaultStudyPlan name]];
-		[defaultStudyPlan release];
+		wordLists = [[NSMutableArray alloc] init];
+		studyPlanList = [[NSMutableArray alloc] init];
+//		IRStudyPlan* defaultStudyPlan = [[IRStudyPlan alloc] init];
+		[studyPlanList addObject:currentStudyPlan];		
+//		[defaultStudyPlan release];
 	}
 	return self;
 }
@@ -36,9 +36,7 @@ static IRAppState* currentState;
 -(void)save{
 	NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 	NSString* documentDirectory = [paths objectAtIndex:0];
-	NSString* fullPath = [NSString stringWithFormat:@"%@/%@",documentDirectory,@"library.plist"];
-	//NSString* currentDirectory = [[NSBundle mainBundle] bundlePath];
-	//NSString* fullPath = [[NSString stringWithFormat:@"%@/library.plist",currentDirectory] stringByExpandingTildeInPath];
+	NSString* fullPath = [NSString stringWithFormat:@"%@/%@",documentDirectory,@"appstate.plist"];
 	//NSLog(@"%@",fullPath);
 	NSMutableData* data = [[NSMutableData alloc] init];
 	NSKeyedArchiver* arc = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
@@ -47,6 +45,7 @@ static IRAppState* currentState;
 	[arc encodeObject:currentStudyPlan forKey:@"currentStudyPlan"];
 	[arc encodeObject:wordLists forKey:@"wordLists"];
 	[arc encodeObject:studyPlanList forKey:@"studyPlanList"];
+	
 	[arc finishEncoding];
 	BOOL success = [data writeToFile:fullPath atomically:YES];
 	[arc release];
@@ -57,20 +56,22 @@ static IRAppState* currentState;
 -(void)loadState{
 	NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 	NSString* documentDirectory = [paths objectAtIndex:0];
-	NSString* fullPath = [NSString stringWithFormat:@"%@/%@",documentDirectory,@"library.plist"];
+	NSString* fullPath = [NSString stringWithFormat:@"%@/%@",documentDirectory,@"appstate.plist"];
 	if(![[NSFileManager defaultManager] fileExistsAtPath:[fullPath stringByExpandingTildeInPath]]){
 		NSString* currentDirectory = [[NSBundle mainBundle] bundlePath];
-		fullPath = [NSString stringWithFormat:@"%@/library.plist",currentDirectory];
+		fullPath = [NSString stringWithFormat:@"%@/appstate.plist",currentDirectory];
+		NSLog(@"default");
 	}
 	
 	NSMutableData* data = [NSData dataWithContentsOfFile:fullPath];
 	NSKeyedUnarchiver* unarc = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
 	NSMutableArray* loadedLibraries = [unarc decodeObjectForKey:@"libraries"];
 	IRStudyPlan* loadedStudyPlan = [unarc decodeObjectForKey:@"currentStudyPlan"];
-	NSMutableDictionary* loadedWordLists = [unarc decodeObjectForKey:@"wordLists"];
-	NSMutableDictionary* loadedStudyPlanList = [unarc decodeObjectForKey:@"studyPlanList"];
+	NSMutableArray* loadedWordLists = [unarc decodeObjectForKey:@"wordLists"];
+	NSMutableArray* loadedStudyPlanList = [unarc decodeObjectForKey:@"studyPlanList"];
 	[unarc finishDecoding];
-	[self setLibraries:loadedLibraries];
+	
+	[self setLibraries:loadedLibraries];	
 	[self setStudyPlanList:loadedStudyPlanList];
 	[self setCurrentStudyPlan:loadedStudyPlan];
 	[self setWordLists:loadedWordLists];
@@ -109,33 +110,43 @@ static IRAppState* currentState;
 }
 
 -(IRWordList*)wordListWithName:(NSString *)name{
-	return [wordLists objectForKey:name];
+	NSInteger wlIdx = [wordLists indexOfObject:[[[IRWordList alloc] initWithLanguage:@"" name:name] autorelease]];
+	return [wordLists objectAtIndex:wlIdx];
 }
 
 -(BOOL)addWordList:(IRWordList *)wordList{
-	if([self wordListWithName:[wordList listName]]!=nil) return NO;
-	[wordLists setObject:wordList forKey:[wordList listName]];
+	if([wordLists containsObject:wordList]) return NO;
+	[wordLists addObject:wordList];
 	return YES;
 }
 
 -(void)removeWordList:(NSString *)name{
-	[wordLists removeObjectForKey:name];
+	[wordLists removeObject:[[[IRWordList alloc] initWithLanguage:@"" name:name] autorelease]];
+	
 }
 
 -(BOOL)addStudyPlan:(IRStudyPlan *)studyPlan{
-	if([studyPlanList objectForKey:[studyPlan name]]!=nil) return NO;
-	[studyPlanList setObject:studyPlan forKey:[studyPlan name]];
+	if([studyPlanList containsObject:studyPlan]) { return NO; }
+	[studyPlanList addObject:studyPlan];
 	return YES;
 }
 
 -(IRStudyPlan*)studyPlanWithName:(NSString *)planName{
-	return [studyPlanList objectForKey:planName];
+	NSInteger spIdx = [studyPlanList indexOfObject:[[[IRStudyPlan alloc] initWithName:planName wordList:nil] autorelease]];
+	if(spIdx == NSNotFound) return nil;
+	return [studyPlanList objectAtIndex:spIdx];
 }
 
 -(BOOL)removeStudyPlanWithName:(NSString *)planName{
-	if([studyPlanList objectForKey:planName]==nil) return NO;
-	[studyPlanList removeObjectForKey:planName];
+	IRStudyPlan *target = [[IRStudyPlan alloc] initWithName:planName wordList:nil];
+	if(![studyPlanList containsObject:target]) return NO;
+	[studyPlanList removeObject:target];
+	[target release];
 	return YES;
+}
+
+-(void)removeStudyPlanAtIndex:(NSInteger)index {
+	[studyPlanList removeObjectAtIndex:index];
 }
 
 -(void)setWordsForGameWithMode:(IRGameStartMode)mode{
@@ -175,6 +186,7 @@ static IRAppState* currentState;
 }
 	
 -(void)dealloc{
+	if(wordsForGame!=nil) [wordsForGame release];
 	[libraries release];
 	[wordLists release];
 	[currentStudyPlan release];

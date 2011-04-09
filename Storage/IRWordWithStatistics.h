@@ -23,4 +23,6 @@
 // The flag whether this word has been studied or not
 // The definition of studied is not here
 
+-(id)initWithID:(NSInteger)wordId;
+
 @end

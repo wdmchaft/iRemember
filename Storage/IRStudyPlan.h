@@ -16,6 +16,12 @@ typedef enum IRStudyMode{
 	IRStudyModeEbenhause = 3
 } IRStudyMode;
 
+typedef	 enum IRStudyOrdering {
+	IRStudyOrderingAlphabetical = 0,
+	IRStudyOrderingReversed = 1,
+	IRStudyOrderingRandom = 2
+} IRStudyOrdering;
+
 @interface IRStudyPlan : NSObject {
 
 }
@@ -31,6 +37,9 @@ typedef enum IRStudyMode{
 @property(nonatomic) NSInteger elapsedDay;
 @property(nonatomic) NSInteger totalDay;
 @property(nonatomic,retain) NSDateComponents* reviewAlertTime;
+@property (nonatomic) NSInteger numberOfWordsForReview;
+@property (nonatomic, retain) NSString *defaultGameName;
+@property (nonatomic) IRStudyOrdering studyOrdering;
 
 -(id)init;
 // Create the default study plan

@@ -13,6 +13,20 @@
 
 @synthesize wordID, correctCount, incorrectCount, totalReactionTime;
 
+-(id)init{
+	return [self initWithID:0];
+}
+
+-(id)initWithID:(NSInteger)wordId{
+	if([super init]!=nil){
+		wordID = 0;
+		correctCount = 0;
+		incorrectCount = 0;
+		totalReactionTime = 0;
+	}
+	return self;
+}
+
 -(NSInteger)usedCount{
 	return correctCount+incorrectCount;
 }
@@ -41,8 +55,8 @@
 -(id)initWithCoder:(NSCoder*)decoder{
 	if([super init]!=nil){
 		[self setWordID:[decoder decodeIntegerForKey:@"wordID"]];
-		[self setCorrectCount:[decoder decodeIntegerForKey:@"decoder"]];
-		[self setIncorrectCount:[decoder decodeIntegerForKey:@"incorrectCOunt"]];
+		[self setCorrectCount:[decoder decodeIntegerForKey:@"correctCount"]];
+		[self setIncorrectCount:[decoder decodeIntegerForKey:@"incorrectCount"]];
 	}
 	return self;
 }

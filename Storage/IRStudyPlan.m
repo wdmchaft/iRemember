@@ -12,13 +12,14 @@
 @implementation IRStudyPlan
 
 @synthesize name, wordList, plannedReviewDates, actualReviewDates, elapsedDay, totalDay, reviewAlertTime;
+@synthesize numberOfWordsForReview, defaultGameName, studyOrdering ;
 
 NSTimeInterval dayToSecond(int days){
 	return days*24*60*60;
 }
 
 -(id)init{
-	return [self initWithName:@"default" wordList:[[[IRWordList alloc] init] autorelease]];
+	return [self initWithName:DEFAULT_STUDYPLAN wordList:[[[IRWordList alloc] init] autorelease]];
 }
 
 -(id)initWithName:(NSString*)nam wordList:(IRWordList*)list{
@@ -34,6 +35,10 @@ NSTimeInterval dayToSecond(int days){
 		[time setMinute:DEFAULT_MINUTE];
 		[self setReviewAlertTime:time];
 		[time release];
+		
+		numberOfWordsForReview = 5;
+		defaultGameName = GAME_MCQ;
+		studyOrdering = IRStudyOrderingAlphabetical;
 	}
 	return self;
 }
@@ -98,6 +103,14 @@ NSTimeInterval dayToSecond(int days){
 
 -(void)didReviewAtDate:(NSDate*)date{
 	[actualReviewDates addObject:date];
+}
+
+-(BOOL)isEqual:(IRStudyPlan*)sp{
+	if(self==nil || sp==nil) return NO;
+	else
+	{
+		return [self.name isEqual:sp.name];
+	}
 }
 
 -(void)encodeWithCoder:(NSCoder*)coder{

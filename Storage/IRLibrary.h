@@ -55,7 +55,7 @@
 // MODIFIES: words in self, words in wordList as well
 // EFFECTS: add the words in the given list into this list
 //			if there exist a word with the same ID, the new word is not added
-//			returns the list of words that are not added
+//			returns the list of words that are added
 
 -(BOOL)removeWordWithID:(NSInteger)wordID;
 // MODIFIES: words in self
@@ -69,5 +69,9 @@
 
 -(NSInteger)count;
 // EFFECTS: returns the number of words in this library
+
+-(void)encodeWithCoder:(NSCoder *)coder;
+
+-(id)initWithCoder:(NSCoder *)decoder;
 
 @end

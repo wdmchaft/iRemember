@@ -63,6 +63,22 @@ CFComparisonResult compareWordsWithStatisticsInGame(const void* val1, const void
 	return [result autorelease];
 }
 
+-(IRWord*)addWord:(NSString *)eng translation:(NSString *)trans lang:(NSString *)lang{
+	IRWord* added = [super addWord:eng translation:trans lang:lang];
+	if(added!=nil){
+		[wordsWithStatistics addObject:[[[IRWordWithStatistics alloc] initWithID:[added wordID]] autorelease]];
+	}
+	return added;
+}
+
+-(NSArray*)addWords:(NSArray *)wordList{
+	NSArray* added = [super addWords:wordList];
+	for(IRWord* word in added){
+		[wordsWithStatistics addObject:[[[IRWordWithStatistics alloc] initWithID:[word wordID]] autorelease]];
+	}
+	return added;
+}
+
 -(NSArray*)statisticsInGame:(NSString *)gameName{
 	return [wordsWithStatisticsInGame objectForKey:gameName];
 }
@@ -118,14 +134,23 @@ CFComparisonResult compareWordsWithStatisticsInGame(const void* val1, const void
 	}
 }
 
+-(BOOL)isEqual:(IRWordList*)wl{
+	if(self==nil || wl==nil) return NO;
+	else
+	{
+		return [self.listName isEqual:wl.listName];
+	}
+}
+
 -(void)encodeWithCoder:(NSCoder *)coder{
+	[super encodeWithCoder:coder];
 	[coder encodeObject:listName forKey:@"listName"];
 	[coder encodeObject:wordsWithStatistics forKey:@"wordsWithStatistics"];
 	[coder encodeObject:wordsWithStatisticsInGame forKey:@"wordsWithStatisticsInGame"];
 }
 
 -(id)initWithCoder:(NSCoder *)decoder{
-	if([super init]!=nil){
+	if([super initWithCoder:decoder]!=nil){
 		[self setListName:[decoder decodeObjectForKey:@"listName"]];
 		[self setWordsWithStatistics:[decoder decodeObjectForKey:@"wordsWithStatistics"]];
 		[self setWordsWithStatisticsInGame:[decoder decodeObjectForKey:@"wordsWithStatisticsInGame"]];

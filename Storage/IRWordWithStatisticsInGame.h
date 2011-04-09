@@ -18,6 +18,8 @@
 @property(nonatomic) NSInteger incorrectCount;
 @property(nonatomic) NSInteger totalReactionTime;
 
+-(id)initWithID:(NSInteger)wordId;
+
 -(NSInteger)usedCount;
 // RETURNS: The total number this word has been used in a game session
 

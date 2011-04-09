@@ -21,10 +21,10 @@
 @property(nonatomic,retain) IRStudyPlan* currentStudyPlan;
 // Current study plan that is being used
 
-@property(nonatomic,retain) NSMutableDictionary* wordLists;
+@property(nonatomic,retain) NSMutableArray* wordLists;
 // The list of word lists, using the listName as the key for the IRWordList object
 
-@property(nonatomic,retain) NSMutableDictionary* studyPlanList;
+@property(nonatomic,retain) NSMutableArray* studyPlanList;
 
 +(id)currentState;
 // EFFECTS: return the current state of the app
@@ -80,6 +80,9 @@
 // EFFECTS: removes the study plan with the specified name
 //			return YES if there exists a study plan with that name, and removed
 //			return NO otherwise
+
+-(void)removeStudyPlanAtIndex:(NSInteger)index;
+// EFFECTS: removes the study plan at the specified index
 
 -(void)setWordsForGameWithMode:(IRGameStartMode)mode;
 // EFFECTS: set up the word list to be used by the game

@@ -159,11 +159,10 @@ CFComparisonResult compareWords(const void *val1, const void *val2, void *contex
 
 -(NSArray*)addWords:(NSArray *)wordList{
 	int result = 0;
-	NSMutableArray* unadded = [[[NSMutableArray alloc] init] autorelease];
+	NSMutableArray* added = [[[NSMutableArray alloc] init] autorelease];
 	for(int i=0; i<[wordList count]; i++){
 		IRWord* word = [wordList objectAtIndex:i];
 		if(![[word language] isEqual:language]||[self wordWithID:[word wordID]]!=nil){
-			[unadded addObject:word];
 			continue;
 		}
 		NSInteger insertIndex = (NSInteger)CFArrayBSearchValues((CFArrayRef)words,
@@ -172,9 +171,10 @@ CFComparisonResult compareWords(const void *val1, const void *val2, void *contex
 																(CFComparatorFunction)compareWords,
 																NULL);
 		[words insertObject:word atIndex:insertIndex];
+		[added addObject:word];
 		result++;
 	}
-	return unadded;
+	return added;
 }
 
 -(BOOL)removeWordWithID:(NSInteger)wordID{
