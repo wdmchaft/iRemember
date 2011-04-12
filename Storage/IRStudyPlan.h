@@ -40,6 +40,8 @@ typedef	 enum IRStudyOrdering {
 @property (nonatomic) NSInteger numberOfWordsForReview;
 @property (nonatomic, retain) NSString *defaultGameName;
 @property (nonatomic) IRStudyOrdering studyOrdering;
+@property (nonatomic) NSInteger reviewInterval;
+@property (nonatomic) BOOL ebenhauseMode;
 
 -(id)init;
 // Create the default study plan
@@ -68,12 +70,10 @@ typedef	 enum IRStudyOrdering {
 -(NSArray*)difficultWords;
 // EFFECTS: returns the list of words that are considered difficult according to the statistics
 
--(void)setUpReviewDatesWithMode:(IRStudyMode)mode;
-// EFFECTS: set the review dates according to the mode, as defined in IRStudyPlan.h
+-(NSArray*)wordsForStudy;
 
--(void)didReviewAtDate:(NSDate*)date;
-// EFFECTS: adds the date, which means a date where a review was conducted into the list
-//			of actual review dates
+-(void)setupReviewDates;
+// EFFECTS: set the review dates according to the mode, as defined in IRStudyPlan.h
 
 -(void)updateStatisticsWithList:(NSArray*)list inGame:(NSString *)gameName;
 // EFFECTS: updates the words with statistics in game

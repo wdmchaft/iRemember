@@ -60,7 +60,7 @@ static IRAppState* currentState;
 	if(![[NSFileManager defaultManager] fileExistsAtPath:[fullPath stringByExpandingTildeInPath]]){
 		NSString* currentDirectory = [[NSBundle mainBundle] bundlePath];
 		fullPath = [NSString stringWithFormat:@"%@/appstate.plist",currentDirectory];
-		NSLog(@"default");
+		//NSLog(@"default");
 	}
 	
 	NSMutableData* data = [NSData dataWithContentsOfFile:fullPath];

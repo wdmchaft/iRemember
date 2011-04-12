@@ -12,7 +12,7 @@
 @implementation IRStudyPlan
 
 @synthesize name, wordList, plannedReviewDates, actualReviewDates, elapsedDay, totalDay, reviewAlertTime;
-@synthesize numberOfWordsForReview, defaultGameName, studyOrdering ;
+@synthesize numberOfWordsForReview, defaultGameName, studyOrdering, reviewInterval, ebenhauseMode;
 
 NSTimeInterval dayToSecond(int days){
 	return days*24*60*60;
@@ -37,8 +37,10 @@ NSTimeInterval dayToSecond(int days){
 		[time release];
 		
 		numberOfWordsForReview = 5;
-		defaultGameName = GAME_MCQ;
+		[self setDefaultGameName:GAME_MCQ];
 		studyOrdering = IRStudyOrderingAlphabetical;
+		reviewInterval = 1;
+		ebenhauseMode = NO;
 	}
 	return self;
 }
@@ -65,44 +67,110 @@ NSTimeInterval dayToSecond(int days){
 	NSArray* words = [wordList statisticsOverview];
 	for(i=0; i<[words count]; i++){
 		IRWordWithStatisticsInGame* wordWithStat = [words objectAtIndex:i];
-		if([wordWithStat incorrectCount]>[wordWithStat correctCount]){
+		if([wordWithStat incorrectCount]>[wordWithStat correctCount]+1){
 			[result addObject:[wordList wordWithID:[wordWithStat wordID]]];
 		}
 	}
 	return [result autorelease];
 }
 
--(void)setUpReviewDatesWithMode:(IRStudyMode)mode{
-	int i=0;
-	switch(mode){
-		case IRStudyModeDaily:
-		case IRStudyModeDefault:
-			for(i=0; i<totalDay; i++){
-				NSDate* date = [NSDate dateWithTimeInterval:dayToSecond(i+1) sinceDate:[NSDate date]];
-				[plannedReviewDates addObject:date];
+-(NSArray*)wordsForStudy{
+	int wordsPerDay = ([wordList count]/totalDay)+1;
+	NSMutableArray* result = [[NSMutableArray alloc] initWithCapacity:wordsPerDay];
+	int i=0,j=0;
+	NSArray* unstudied = [wordList unstudiedWords];
+	int used[[unstudied count]];
+	int size = [unstudied count];
+	for(i=0; i<[unstudied count]; i++){
+		used[i] = i;
+	}
+	switch(studyOrdering){
+		case IRStudyOrderingAlphabetical:
+			for(i=0; i<wordsPerDay && i<[unstudied count]; i++){
+				[result addObject:[wordList wordWithID:[[unstudied objectAtIndex:i] wordID]]];
 			}
 			break;
-		case IRStudyModeWeekly:
-			for(i=0; i<totalDay; i++){
-				NSDate* date = [NSDate dateWithTimeInterval:dayToSecond(7*i+1) sinceDate:[NSDate date]];
-				[plannedReviewDates addObject:date];
+		case IRStudyOrderingReversed:
+			for(i=[unstudied count]-1; i>=[unstudied count]-wordsPerDay && i>=0; i--){
+				[result addObject:[wordList wordWithID:[[unstudied objectAtIndex:i] wordID]]];
 			}
 			break;
-		case IRStudyModeEbenhause:
-			for(i=0; i<totalDay; i++){
-				NSDate* date = [NSDate dateWithTimeInterval:dayToSecond(i+1+(i/4)) sinceDate:[NSDate date]];
-				[plannedReviewDates addObject:date];
+		case IRStudyOrderingRandom:
+			for(i=0; i<wordsPerDay && i<[unstudied count]; i++){
+				int idx = rand()*size;
+				[result addObject:[wordList wordWithID:[[unstudied objectAtIndex:used[idx]] wordID]]];
+				for(j=idx; j<size-1; j++){
+					used[j]=used[j+1];
+				}
+				size--;
 			}
 			break;
 	}
+	return [result autorelease];
+}
+
+-(void)setReviewInterval:(NSInteger)interval{
+	reviewInterval = interval;
+	[self setupReviewDates];
+}
+
+-(void)setupReviewDates{
+	int i=0;
+	NSDateComponents* base = [[NSCalendar currentCalendar] components:(NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit) fromDate:[NSDate dateWithTimeIntervalSinceNow:0]];
+	[base setHour:0];
+	[base setMinute:0];
+	NSDate* date = [[NSCalendar currentCalendar] dateFromComponents:base];
+	NSDateComponents* diff = [[NSDateComponents alloc] init];
+	[diff setHour:[reviewAlertTime hour]];
+	[diff setMinute:[reviewAlertTime minute]];
+	if(!ebenhauseMode){
+		for(IRWordWithStatistics* word in [wordList wordsWithStatistics]){
+			int con = [word numberOfConductedReview];
+			if([[word reviewDates] count]>0 && [(NSDate*)[[word reviewDates] objectAtIndex:con] compare:date]>=0){
+				for(i=0; i<NUMBER_REVIEW-con; i++){
+					NSDate* newDate = [[word reviewDates] objectAtIndex:i+con];
+					if(![plannedReviewDates containsObject:newDate]) [plannedReviewDates addObject:newDate];
+				}
+				continue;
+			}
+			for(i=0; i<NUMBER_REVIEW-con; i++){
+				[diff setDay:reviewInterval*i+1];
+				NSDate* newDate = [[NSCalendar currentCalendar] dateByAddingComponents:diff toDate:date options:0];
+				if(i+con<[[word reviewDates] count]){
+					[[word reviewDates] replaceObjectAtIndex:i+con withObject:newDate];
+				}else{
+					[[word reviewDates] addObject:newDate];
+				}
+				if(![plannedReviewDates containsObject:newDate]) [plannedReviewDates addObject:newDate];
+			}
+		}
+	} else {
+		for(IRWordWithStatistics* word in [wordList wordsWithStatistics]){
+			int con = [word numberOfConductedReview];
+			if([[word reviewDates] count]>0 && [(NSDate*)[[word reviewDates] objectAtIndex:con] compare:date]>=0){
+				for(i=0; i<NUMBER_REVIEW-con; i++){
+					NSDate* newDate = [[word reviewDates] objectAtIndex:i+con];
+					if(![plannedReviewDates containsObject:newDate]) [plannedReviewDates addObject:newDate];
+				}
+				continue;
+			}
+			for(i=0; i<NUMBER_REVIEW-con; i++){
+				[diff setDay:i*((3*i)/(i+2))-con*((3*con)/(con+2))+1];
+				NSDate* newDate = [[NSCalendar currentCalendar] dateByAddingComponents:diff toDate:date options:0];
+				if(i+con<[[word reviewDates] count]){
+					[[word reviewDates] replaceObjectAtIndex:i+con withObject:newDate];
+				}else{
+					[[word reviewDates] addObject:newDate];
+				}
+				if(![plannedReviewDates containsObject:newDate]) [plannedReviewDates addObject:newDate];
+			}
+		}
+	}
+	[diff release];
 }
 
 -(void)updateStatisticsWithList:(NSArray*)list inGame:(NSString *)gameName{
 	[wordList updateStatisticsWithList:list inGame:gameName];
-}
-
--(void)didReviewAtDate:(NSDate*)date{
-	[actualReviewDates addObject:date];
 }
 
 -(BOOL)isEqual:(IRStudyPlan*)sp{
@@ -119,6 +187,13 @@ NSTimeInterval dayToSecond(int days){
 	[coder encodeObject:plannedReviewDates forKey:@"plannedReviewDates"];
 	[coder encodeObject:actualReviewDates forKey:@"actualReviewDates"];
 	[coder encodeInteger:elapsedDay forKey:@"elapsedDay"];
+	[coder encodeInteger:totalDay forKey:@"totalDay"];
+	[coder encodeObject:reviewAlertTime forKey:@"reviewAlertTime"];
+	[coder encodeInteger:numberOfWordsForReview forKey:@"numberOfWordsForReview"];
+	[coder encodeObject:defaultGameName forKey:@"defaultGameName"];
+	[coder encodeInteger:studyOrdering forKey:@"studyOrdering"];
+	[coder encodeInteger:reviewInterval forKey:@"reviewInterval"];
+	[coder encodeBool:ebenhauseMode forKey:@"ebenhauseMode"];
 }
 
 -(id)initWithCoder:(NSCoder*)decoder{
@@ -128,6 +203,13 @@ NSTimeInterval dayToSecond(int days){
 		[self setPlannedReviewDates:[decoder decodeObjectForKey:@"plannedReviewDates"]];
 		[self setActualReviewDates:[decoder decodeObjectForKey:@"actualReviewDates"]];
 		[self setElapsedDay:[decoder decodeIntegerForKey:@"elapsedDay"]];
+		[self setTotalDay:[decoder decodeIntegerForKey:@"totalDay"]];
+		[self setReviewAlertTime:[decoder decodeObjectForKey:@"reviewAlertTime"]];
+		[self setNumberOfWordsForReview:[decoder decodeIntegerForKey:@"numberOfWordsForReview"]];
+		[self setDefaultGameName:[decoder decodeObjectForKey:@"defaultGameName"]];
+		[self setStudyOrdering:[decoder decodeIntegerForKey:@"studyOrdering"]];
+		[self setReviewInterval:[decoder decodeIntegerForKey:@"reviewInterval"]];
+		[self setEbenhauseMode:[decoder decodeBoolForKey:@"ebenhauseMode"]];
 	}
 	return self;
 }
@@ -138,6 +220,7 @@ NSTimeInterval dayToSecond(int days){
 	[plannedReviewDates release];
 	[actualReviewDates release];
 	[reviewAlertTime release];
+	[defaultGameName release];
 	[super dealloc];
 }
 

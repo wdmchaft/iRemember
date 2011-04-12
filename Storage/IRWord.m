@@ -38,7 +38,7 @@
 }
 
 -(NSString*)soundFileName{
-	return [NSString stringWithFormat:@"%d%@.mp3",wordID,englishWord];
+	return [NSString stringWithFormat:@"%d%@.caf",wordID,englishWord];
 }
 
 -(BOOL)isEqual:(IRWord*)word{

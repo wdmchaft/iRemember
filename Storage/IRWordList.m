@@ -85,7 +85,7 @@ CFComparisonResult compareWordsWithStatisticsInGame(const void* val1, const void
 
 -(NSArray*)statisticsOverview{
 	NSMutableArray* result = [[NSMutableArray alloc] initWithCapacity:[self count]];
-	for(NSArray* gameStatistics in wordsWithStatisticsInGame){
+	for(NSArray* gameStatistics in [wordsWithStatisticsInGame allValues]){
 		int i=0, idx=0;
 		for(i=0; i<[gameStatistics count]; i++){
 			IRWordWithStatisticsInGame* wordStat = [gameStatistics objectAtIndex:i];
@@ -98,6 +98,7 @@ CFComparisonResult compareWordsWithStatisticsInGame(const void* val1, const void
 					break;
 				} else if([curWord wordID]>[wordStat wordID]){
 					shouldAdd = YES;
+					break;
 				} else {
 					idx++;
 				}
@@ -125,11 +126,16 @@ CFComparisonResult compareWordsWithStatisticsInGame(const void* val1, const void
 																currentWord,
 																(CFComparatorFunction)compareWordsWithStatisticsInGame,
 																NULL);
-		IRWordWithStatisticsInGame* match = [gameStatistics objectAtIndex:insertIndex];
-		if([match wordID]!=[currentWord wordID]){
-			[gameStatistics insertObject:[list objectAtIndex:i] atIndex:insertIndex];
+		IRWordWithStatisticsInGame* match;
+		if(insertIndex<[gameStatistics count]){
+			match = [gameStatistics objectAtIndex:insertIndex];
+			if([match wordID]!=[currentWord wordID]){
+				[gameStatistics insertObject:[list objectAtIndex:i] atIndex:insertIndex];
+			} else {
+				[match updateStatWithStat:currentWord];
+			}
 		} else {
-			[match updateStatWithStat:currentWord];
+			[gameStatistics insertObject:[list objectAtIndex:i] atIndex:insertIndex];
 		}
 	}
 }

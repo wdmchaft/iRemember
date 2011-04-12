@@ -19,7 +19,7 @@
 
 -(id)initWithID:(NSInteger)wordId{
 	if([super init]!=nil){
-		wordID = 0;
+		wordID = wordId;
 		correctCount = 0;
 		incorrectCount = 0;
 		totalReactionTime = 0;
@@ -57,6 +57,7 @@
 		[self setWordID:[decoder decodeIntegerForKey:@"wordID"]];
 		[self setCorrectCount:[decoder decodeIntegerForKey:@"correctCount"]];
 		[self setIncorrectCount:[decoder decodeIntegerForKey:@"incorrectCount"]];
+		[self setTotalReactionTime:[decoder decodeIntegerForKey:@"totalReactionTime"]];
 	}
 	return self;
 }
